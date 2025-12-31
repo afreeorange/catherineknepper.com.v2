@@ -181,7 +181,7 @@ section[id="clients"] {
   @apply border-t border-t-amber-600;
 
   ul {
-    @apply list-none columns-2 md:columns-3 text-2xl md:text-3xl mt-12 max-w-7xl mx-auto;
+    @apply list-none columns-2 md:gap-12 md:columns-3 text-2xl md:text-3xl mt-12 max-w-7xl mx-auto;
 
     li {
       @apply block border-b break-inside-avoid border-blue-500 border-dotted;
