@@ -45,7 +45,7 @@ export const Services = () => (
       <service-section>
         <h3>Book Proposal Preparation</h3>
         <h4>
-          Content strategy and marketing for nonfiction authors seeking
+          Content strategy <em>&amp;</em> marketing for nonfiction authors seeking
           traditional publication
         </h4>
         <p>

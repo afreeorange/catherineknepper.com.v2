@@ -17,13 +17,55 @@ header {
     @apply uppercase font-bold text-5xl;
   }
 
+  /* Hamburger button - visible below md */
+  .hamburger {
+    @apply md:hidden cursor-pointer z-50;
+
+    svg {
+      @apply w-10 h-10;
+    }
+  }
+
+  /* Desktop nav - hidden below md */
   nav ul {
-    @apply inline-flex flex-wrap gap-x-12 text-4xl leading-13;
+    @apply hidden md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
 
     li {
       @apply text-right;
     }
   }
+}
+
+/* Hidden checkbox for menu state */
+.menu-checkbox {
+  @apply hidden;
+}
+
+/* Mobile menu overlay */
+.mobile-menu {
+  @apply fixed inset-0 bg-[#0c1035]/95 z-40 flex-col items-center justify-center hidden;
+  font-family: "Louize Display";
+
+  .close-btn {
+    @apply absolute top-6 right-6 cursor-pointer;
+
+    svg {
+      @apply w-10 h-10;
+    }
+  }
+
+  ul {
+    @apply flex flex-col gap-8 text-4xl text-center;
+
+    a {
+      @apply block py-2;
+    }
+  }
+}
+
+/* Show menu when checkbox is checked */
+.menu-checkbox:checked ~ header ~ .mobile-menu {
+  @apply flex;
 }
 
 h2 {
@@ -128,14 +170,20 @@ section[id="hello"] {
 }
 
 section[id="more-about-me"] {
-  background: #080f4f;
+  @apply bg-orange-800 pb-4;
+
+  h2 {
+    @apply text-amber-300;
+  }
+
+  /* background: #080f4f; */
   section-wrapper {
     @apply block max-w-7xl mx-auto text-2xl;
   }
 }
 
 section[id="books"] {
-  @apply overflow-hidden;
+  @apply overflow-hidden bg-indigo-900;
   /* @apply border-t border-t-amber-600; */
 
   h2 {
@@ -282,7 +330,7 @@ section[id="contact"] {
   }
 
   span {
-    @apply flex items-center;
+    @apply flex items-center mb-2 md:m-0;
   }
 
   input,
@@ -299,17 +347,19 @@ section[id="contact"] {
   }
 
   button[type="submit"] {
-    @apply w-full text-5xl py-6 italic flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
+    font-family: "Eksell Display";
+    @apply w-full text-5xl py-6 tracking-wide flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
 
     &:hover {
       @apply bg-orange-500 cursor-pointer text-white;
+
       svg {
         @apply fill-white;
       }
     }
 
     svg {
-      @apply ml-4 text-4xl fill-orange-500;
+      @apply ml-4 mt-2 text-3xl fill-orange-500;
     }
   }
 }

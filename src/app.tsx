@@ -29,9 +29,25 @@ const NAVIGATION = [
   },
 ];
 
+const HamburgerIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <line x1="3" y1="12" x2="21" y2="12" />
+    <line x1="3" y1="18" x2="21" y2="18" />
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
+  </svg>
+);
+
 export const App = () => (
   <>
     <above-fold>
+      <input type="checkbox" id="menu-toggle" className="menu-checkbox" />
       <header>
         <h1>Catherine Knepper</h1>
         <nav>
@@ -45,7 +61,26 @@ export const App = () => (
             ))}
           </ul>
         </nav>
+        {/* <label htmlFor="menu-toggle" className="hamburger">
+          <HamburgerIcon />
+        </label> */}
       </header>
+      {/* <div className="mobile-menu">
+        <label htmlFor="menu-toggle" className="close-btn">
+          <CloseIcon />
+        </label>
+        <ul>
+          {NAVIGATION.map((_) => (
+            <li key={_.link}>
+              <label htmlFor="menu-toggle">
+                <a href={_.link} title={_.title}>
+                  {_.label}
+                </a>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </div> */}
       <Hello />
     </above-fold>
 
