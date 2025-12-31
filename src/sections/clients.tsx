@@ -41,12 +41,14 @@ const CLIENTS = [
 export const Clients = () => (
   <section id="clients">
     <h2>Selected Clients</h2>
-    <ul>
-      {CLIENTS.map((_) => (
-        <li>
-          <span dangerouslySetInnerHTML={{ __html: _ }} />
-        </li>
-      ))}
-    </ul>
+    <section-wrapper>
+      <ul>
+        {CLIENTS.map((_) => (
+          <li>
+            <span dangerouslySetInnerHTML={{ __html: _ }} />
+          </li>
+        ))}
+      </ul>
+    </section-wrapper>
   </section>
 );

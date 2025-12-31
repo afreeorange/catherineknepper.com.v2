@@ -6,10 +6,10 @@
 
 - [ ] Favicon
 - [ ] OpenGraph
-- [ ] Build
+- [x] Build
 - [ ] Correct quotes... typography!
-- [ ] robots.txt
-- [ ] humans.txt
+- [x] robots.txt
+- [x] humans.txt
 
 ## References
 

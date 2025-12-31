@@ -195,30 +195,66 @@ export const Books = () => {
   return (
     <section id="books">
       <h2>
-        Selected Books <em>&amp;</em> Publishers
+        Featured Books <em>&amp;</em> Publishers
       </h2>
 
       <h3>Books</h3>
-      <ul>
-        {BOOKS.map((_) => (
-          <li>
-            {_.title} by {_.author}
-            <br />
-            <img src={_.uri} alt={`${_.title} by ${_.author}`} />
-          </li>
-        ))}
-      </ul>
+      <books-wrapper>
+        <ul>
+          {BOOKS.map((_) => (
+            <li class={"book-cover"}>
+              <img
+                alt={`${_.title} by ${_.author}`}
+                decoding={"async"}
+                loading={"lazy"}
+                src={_.uri}
+              />
+              <span>
+                <br />
+                {_.title} by {_.author}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </books-wrapper>
 
       <h3>Publishers</h3>
-      <ul>
-        {PUBLISHERS.map((_) => (
-          <li>
-            {_.name}
-            <br />
-            <img src={_.path} alt={`${_.name}`} />
-          </li>
-        ))}
-      </ul>
+      <publishers-wrapper>
+        <ul>
+          {/* First set of logos */}
+          {PUBLISHERS.map((publisher, index) => (
+            <li key={`first-${index}`}>
+              <img src={publisher.path} alt={publisher.name} />
+              <span>
+                <br />
+                {publisher.name}
+              </span>
+            </li>
+          ))}
+          {/* Identical second set for the loop */}
+          {PUBLISHERS.map((publisher, index) => (
+            <li key={`second-${index}`}>
+              <img src={publisher.path} alt={publisher.name} />
+              <span>
+                <br />
+                {publisher.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </publishers-wrapper>
+
+      {/* <ul>
+          {PUBLISHERS.map((_) => (
+            <li>
+              <img src={_.path} alt={`${_.name}`} />
+              <span>
+                <br />
+                {_.name}
+              </span>
+            </li>
+          ))}
+        </ul> */}
     </section>
   );
 };

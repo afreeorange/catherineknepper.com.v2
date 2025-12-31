@@ -1,5 +1,315 @@
 @import "tailwindcss";
 
-html, body {
-  @apply scroll-smooth;
+html,
+body {
+  @apply scroll-smooth w-full;
+  font-family: "Louize";
+  /* background-color: #111; */
+  background: #0c1035;
+  color: white;
+}
+
+header {
+  @apply flex gap-4 justify-between items-center p-6;
+  font-family: "Louize Display";
+
+  h1 {
+    @apply uppercase font-bold text-5xl;
+  }
+
+  nav ul {
+    @apply inline-flex flex-wrap gap-x-12 text-4xl leading-13;
+
+    li {
+      @apply text-right;
+    }
+  }
+}
+
+h2 {
+  @apply text-6xl max-w-7xl mx-auto text-orange-500;
+  font-family: "Eksell Display";
+
+  em {
+    @apply font-extralight;
+    font-weight: 100;
+    font-family: "Louize";
+  }
+}
+
+h3 {
+  @apply text-4xl text-orange-400 max-w-7xl mx-auto;
+  font-family: "Eksell Display";
+}
+
+h4 {
+  @apply text-3xl text-amber-400;
+  font-family: "Eksell Display";
+  /* font-weight: normal; */
+}
+
+p {
+  @apply my-8;
+}
+
+.book-cover {
+  @apply relative h-fit rounded-l-sm rounded-r-lg;
+
+  img {
+    @apply block rounded-l-sm rounded-r-md;
+    box-shadow: 3px 3px 8px -2px #000;
+  }
+
+  /* This adds the 'hardcover' effect */
+  &::after {
+    bottom: 0;
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.7);
+    content: "";
+    left: 0.5rem;
+    position: absolute;
+    top: 0;
+    width: 3px;
+  }
+
+  &:hover {
+    @apply saturate-200;
+  }
+}
+
+above-fold {
+  @apply block bg-top-right;
+  background-image: url("/catherine/about.webp");
+  background-size: cover;
+
+  p {
+    @apply text-3xl;
+  }
+}
+
+section {
+  @apply px-6 py-12;
+  scrollbar-color: var(--color-orange-500) #080f4f;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #080f4f;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #080f4f;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-lg;
+    background-color: var(--color-orange-500);
+  }
+}
+
+section[id="hello"] {
+  @apply text-xl pt-4 max-w-7xl mx-auto pr-72;
+
+  p:nth-of-type(1) {
+    font-family: "Eksell Display";
+    @apply text-5xl text-orange-500;
+  }
+}
+
+section[id="books"] {
+  @apply overflow-hidden;
+  @apply border-t border-t-amber-600;
+
+  h2 {
+    @apply mb-8;
+  }
+
+  h3 {
+    @apply hidden;
+  }
+
+  /* Books */
+  books-wrapper {
+    ul {
+      @apply grid overflow-x-scroll gap-x-8 items-end pb-4;
+      grid-auto-flow: column;
+
+      li {
+        @apply min-w-48;
+      }
+    }
+
+    li span {
+      @apply hidden;
+    }
+  }
+
+  /* Publishers */
+  publishers-wrapper {
+    ul {
+      @apply flex gap-x-12 mt-12 mb-4;
+      width: max-content;
+      animation: logo-scroll 50s linear infinite;
+
+      li {
+        @apply hover:cursor-pointer;
+
+        img {
+          @apply h-32 opacity-50 invert;
+        }
+      }
+
+      li:hover {
+        img {
+          @apply opacity-100;
+        }
+      }
+
+      li span {
+        @apply hidden;
+      }
+    }
+
+    /* Pause on hover */
+    ul:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+section[id="clients"] {
+  background: #0d187f;
+  @apply border-t border-t-amber-600;
+
+  ul {
+    @apply list-none columns-2 md:columns-3 text-2xl md:text-3xl mt-12 max-w-7xl mx-auto;
+
+    li {
+      @apply block border-b break-inside-avoid border-blue-500 border-dotted;
+    }
+
+    li {
+      @apply break-inside-avoid py-2;
+
+      span {
+        @apply max-w-2xl mx-auto block;
+      }
+    }
+  }
+}
+
+section[id="testimonials"] {
+  background: #070d41;
+  @apply border-t border-t-amber-600;
+
+  section-wrapper {
+    @apply block max-w-7xl mx-auto text-3xl;
+
+    figure {
+      @apply my-12;
+
+      blockquote + figcaption {
+        @apply relative mb-8 ml-6 mt-4 text-2xl;
+        @apply text-blue-300;
+      }
+
+      blockquote + figcaption::before {
+        content: "\2013";
+        @apply absolute -left-6;
+      }
+
+      blockquote + figcaption strong {
+        /* @apply text-orange-400; */
+      }
+
+      blockquote + figcaption a {
+        @apply underline underline-offset-4;
+      }
+    }
+  }
+}
+
+section[id="services"] {
+  background: #131b66;
+  @apply border-t border-t-amber-600;
+
+  section-wrapper {
+    @apply block max-w-7xl mx-auto text-3xl;
+
+    service-section {
+      @apply block pt-8 border-t border-dotted border-blue-500;
+    }
+  }
+
+  ul {
+    @apply list-disc ml-6 my-8;
+  }
+
+  mark {
+    @apply bg-transparent text-blue-300;
+  }
+}
+
+section[id="contact"] {
+  background: #0c1035;
+  @apply text-3xl;
+
+  section-wrapper {
+    @apply block max-w-7xl mx-auto mt-12;
+  }
+
+  label {
+    @apply md:grid md:grid-cols-2 md:gap-8;
+    grid-template-columns: 150px auto;
+  }
+
+  span {
+    @apply flex items-center;
+  }
+
+  input,
+  textarea {
+    @apply border border-dotted border-blue-300 rounded-md p-4 w-full;
+  }
+
+  textarea {
+    @apply h-64;
+  }
+
+  p:last-child {
+    @apply md:pl-[180px];
+  }
+
+  button[type="submit"] {
+    @apply w-full text-5xl py-4 italic relative rounded-md border border-red-500;
+
+    &:hover {
+      @apply bg-red-700 cursor-pointer;
+    }
+
+    svg {
+      @apply absolute inline ml-4;
+    }
+  }
+}
+
+footer {
+  @apply max-w-7xl mx-auto mt-8 mb-36 text-2xl px-4;
+
+  a {
+    @apply underline underline-offset-4;
+  }
+
+  br {
+    @apply hidden md:block;
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves exactly half the track width (the first set of 10) */
+    transform: translateX(-50%);
+  }
 }
