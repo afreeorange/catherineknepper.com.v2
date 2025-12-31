@@ -5,6 +5,11 @@
 ### TODO
 
 - [ ] Favicon
+- [ ] OpenGraph
+- [ ] Build
+- [ ] Correct quotes... typography!
+- [ ] robots.txt
+- [ ] humans.txt
 
 ## References
 

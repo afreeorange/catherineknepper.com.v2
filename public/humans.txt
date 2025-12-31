@@ -1,0 +1,10 @@
+/* TEAM */
+	Author: Nikhil Anand
+	Contact: mail [at] nikhil.io
+	GitHub: @afreeorange
+	From: Des Moines, Iowa, USA
+	Website: https://nikhil.io
+
+/* SITE */
+	Language: English
+	Software: Node, Vite, CSS, HTML, JavaScript, bash

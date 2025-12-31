@@ -1,0 +1,19 @@
+[
+  { "name": "Bloomsbury", "path": "bloomsbury.png" },
+  { "name": "Countryman Press", "path": "countryman.png" },
+  { "name": "Crown Press", "path": "crown.png" },
+  { "name": "Hachette Books", "path": "hachette.png" },
+  { "name": "HarperCollins", "path": "harpercollins.png" },
+  { "name": "Harvard Business Review", "path": "hbr.png" },
+  { "name": "O'Reilly", "path": "oreilly.png" },
+  { "name": "OU Press", "path": "ou.png" },
+  { "name": "Penguin Random House", "path": "penguin.png" },
+  { "name": "Post Hill Press", "path": "posthill.png" },
+  { "name": "Rodale", "path": "rodale.png" },
+  { "name": "Schiffer Publishing", "path": "schiffer.png" },
+  { "name": "Seal Press", "path": "seal.png" },
+  { "name": "Simon & Schuster", "path": "simon.png" },
+  { "name": "Sourcebooks", "path": "sourcebooks.png" },
+  { "name": "Spiegel and Grau", "path": "spiegel.png" },
+  { "name": "St. Martin's Press", "path": "stmartin.png" }
+]
