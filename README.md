@@ -10,6 +10,8 @@
 - [ ] Correct quotes... typography!
 - [x] robots.txt
 - [x] humans.txt
+- [ ] Ligatures!
+- [ ] Back to top ^^^
 
 ## References
 

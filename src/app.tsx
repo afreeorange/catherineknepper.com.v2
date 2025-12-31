@@ -1,4 +1,5 @@
 import { Hello } from "./sections/hello";
+import { MoreAboutMe } from "./sections/moreAboutMe";
 import { Clients } from "./sections/clients";
 import { Testimonials } from "./sections/testimonials";
 import { Services } from "./sections/services";
@@ -50,6 +51,7 @@ export const App = () => (
 
     <main>
       <Books />
+      <MoreAboutMe />
       <Clients />
       <Testimonials />
       <Services />
@@ -57,8 +59,8 @@ export const App = () => (
     </main>
 
     <footer>
-      &copy; {new Date().getFullYear()}, Catherine Knepper Writing Services, LLC.{" "}
-      <br />I respect your privacy and use{" "}
+      &copy; {new Date().getFullYear()}, Catherine Knepper Writing Services,
+      LLC. <br />I respect your privacy and use{" "}
       <a
         href="https://plausible.io"
         title={"I use Plausible, a privacy-friendly web analytics solution."}

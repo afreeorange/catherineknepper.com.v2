@@ -2,48 +2,53 @@ export const Hello = () => (
   <section id="hello">
     <section-wrapper>
       <p>
-        I help writers, experts, leaders, and visionaries bring their ideas to
-        the page and their words to the marketplace.
+        I help writers, experts, and leaders turn complex ideas into books that
+        matter.
       </p>
       <p>
-        My clients are novelists, short story writers, memoirists,
-        entrepreneurs, scientists, journalists, academics, technologists,
-        policymakers, architects, business executives, health & fitness experts,
-        and more.
+        For over twenty years, I've worked with people who have something vital
+        to say and need a skilled partner to help them say it well. Whether
+        you're distilling decades of professional insight, uncovering the
+        emotional truth of a personal story, or translating specialized
+        knowledge for broader audiences, great books require both craft and
+        clarity. My job is to help you achieve both without sacrificing either.
       </p>
       <p>
-        I began editing in 2003 while I was completing my MFA at the Iowa
-        Writers' Workshop, became a full-time editor in 2005, and in 2009
-        launched my own editing and writing business. I've worked with hundreds
-        of authors in dozens of genres, collaborated on ten books, written book
-        proposals, articles, speeches, op-eds, and book marketing material, and
-        cultivated relationships with many of the top literary agents in the
-        business. The Writers᾿ Workshop taught me a great deal about the
-        creative side of writing, but it was working as an editor and
-        collaborator that taught me the business of publishing. As a writer with
-        experience on both sides of the desk, I'm in a unique position to help
-        you make your book a work of creative and commercial success.
+        I’ve collaborated on fifteen books, including USA Today and Wall Street
+        Journal bestsellers, Thinkers50 selections, Next Big Idea Club picks,
+        Financial Times best-of books, and Axiom Award winners. More
+        importantly, these books have sparked real conversations, earning
+        endorsements from leaders who rarely give them and the kind of critical
+        attention that moves careers forward and reshapes how authors are seen
+        in their fields.
       </p>
       <p>
-        I hold degrees in English literature and philosophy & religion (B.A.),
-        theology (M.Div.), and fiction (MFA). I've also done fiction-writing
-        courses through the Harvard Extension School and Boston's Grub Street
-        Writers. Along the way I've judged writing contests and vetted
-        submissions for AGNI and The Iowa Review, and every now and again I get
-        around to my own writing. My fiction has appeared in West Branch, The
-        Florida Review, Memorious, Necessary Fiction, Meridian, and
-        Confrontation, and The Maine Review.
+        My editing clients include National Book Award finalists, multiple New
+        York Times bestsellers and Notable Books authors, PEN Award winners,
+        multiple Independent Publisher Book Award recipients, and writers whose
+        work has been named among the year’s best by Time, Entertainment Weekly,
+        and NPR's Fresh Air. Their books have earned starred reviews from
+        Kirkus, Library Journal, Booklist, and Publisher’s Weekly—and landed on
+        reading lists from President Barack Obama to Malcolm Gladwell.
       </p>
-
       <p>
-        I'm based in Des Moines, Iowa, where I do my best to keep up with two
-        teenagers and a rescue husky named Luna.
+        I also develop book proposals that are as carefully crafted as the books
+        they promise. A strong proposal requires more than market positioning—it
+        must demonstrate that the book itself can deliver. Drawing on a deep
+        familiarity with how agents and editors read, assess, and champion
+        projects, I help authors build proposals that clarify the core idea,
+        articulate market relevance, and position a book for serious
+        consideration.{" "}
+        <strong>
+          Every proposal I’ve written has sold to a major publisher
+        </strong>
+        .{" "}
       </p>
-
       <p>
-        If you have further questions or would like to discuss your work, please
-        contact me at ckneppereditor@gmail.com or use the contact form below and
-        I'll get back to you right away.
+        Whether you’re writing your first book or refining your tenth, I provide
+        the editorial partnership required to move from idea to
+        publication—while preserving the voice and vision that makes your work
+        distinctly yours.{" "}
       </p>
     </section-wrapper>
   </section>

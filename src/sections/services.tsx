@@ -75,7 +75,9 @@ export const Services = () => (
       </service-section>
 
       <service-section>
-        <h3>Manuscript Collaboration &amp; Ghostwriting (nonfiction only)</h3>
+        <h3>
+          Manuscript Collaboration <em>&amp;</em> Ghostwriting (nonfiction only)
+        </h3>
         <p>
           If you have a great idea for a book but don’t have the time, writing
           experience, or inclination to write it, let’s work together to create

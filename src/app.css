@@ -1,10 +1,10 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 html,
 body {
   @apply scroll-smooth w-full;
   font-family: "Louize";
-  /* background-color: #111; */
   background: #0c1035;
   color: white;
 }
@@ -40,12 +40,24 @@ h2 {
 h3 {
   @apply text-4xl text-orange-400 max-w-7xl mx-auto;
   font-family: "Eksell Display";
+
+  em {
+    @apply font-extralight;
+    font-weight: 100;
+    font-family: "Louize";
+  }
 }
 
 h4 {
   @apply text-3xl text-amber-400;
   font-family: "Eksell Display";
   /* font-weight: normal; */
+
+  em {
+    @apply font-extralight;
+    font-weight: 100;
+    font-family: "Louize";
+  }
 }
 
 p {
@@ -115,9 +127,16 @@ section[id="hello"] {
   }
 }
 
+section[id="more-about-me"] {
+  background: #080f4f;
+  section-wrapper {
+    @apply block max-w-7xl mx-auto text-2xl;
+  }
+}
+
 section[id="books"] {
   @apply overflow-hidden;
-  @apply border-t border-t-amber-600;
+  /* @apply border-t border-t-amber-600; */
 
   h2 {
     @apply mb-8;
@@ -178,7 +197,7 @@ section[id="books"] {
 
 section[id="clients"] {
   background: #0d187f;
-  @apply border-t border-t-amber-600;
+  /* @apply border-t border-t-amber-600; */
 
   ul {
     @apply list-none columns-2 md:gap-12 md:columns-3 text-2xl md:text-3xl mt-12 max-w-7xl mx-auto;
@@ -199,7 +218,7 @@ section[id="clients"] {
 
 section[id="testimonials"] {
   background: #070d41;
-  @apply border-t border-t-amber-600;
+  /* @apply border-t border-t-amber-600; */
 
   section-wrapper {
     @apply block max-w-7xl mx-auto text-3xl;
@@ -230,7 +249,7 @@ section[id="testimonials"] {
 
 section[id="services"] {
   background: #131b66;
-  @apply border-t border-t-amber-600;
+  /* @apply border-t border-t-amber-600; */
 
   section-wrapper {
     @apply block max-w-7xl mx-auto text-3xl;
@@ -280,20 +299,24 @@ section[id="contact"] {
   }
 
   button[type="submit"] {
-    @apply w-full text-5xl py-4 italic relative rounded-md border border-red-500;
+    @apply w-full text-5xl py-6 italic flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
 
     &:hover {
-      @apply bg-red-700 cursor-pointer;
+      @apply bg-orange-500 cursor-pointer text-white;
+      svg {
+        @apply fill-white;
+      }
     }
 
     svg {
-      @apply absolute inline ml-4;
+      @apply ml-4 text-4xl fill-orange-500;
     }
   }
 }
 
 footer {
-  @apply max-w-7xl mx-auto mt-8 mb-36 text-2xl px-4;
+  @apply max-w-7xl mx-auto mt-8 mb-36 text-2xl px-6 md:text-center;
+  font-family: "Louize Display";
 
   a {
     @apply underline underline-offset-4;
