@@ -11,9 +11,10 @@ declare module "preact" {
 
     interface IntrinsicElements {
       "above-fold": HTMLAttributes<HTMLElement>;
-      "section-wrapper": HTMLAttributes<HTMLElement>;
+      "back-to-top": HTMLAttributes<HTMLElement>;
       "books-wrapper": HTMLAttributes<HTMLElement>;
       "publishers-wrapper": HTMLAttributes<HTMLElement>;
+      "section-wrapper": HTMLAttributes<HTMLElement>;
       "service-section": HTMLAttributes<HTMLElement>;
     }
   }

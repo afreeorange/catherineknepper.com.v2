@@ -10,13 +10,14 @@
 - [ ] Correct quotes... typography!
 - [x] robots.txt
 - [x] humans.txt
-- [ ] Ligatures!
+- [ ] Discretionary Ligatures! E.g. "Muriel"
 - [ ] Back to top ^^^
+- [ ] Responsive :/
 
 ## References
 
-- https://www.hilaryliftin.com/
 - https://sarastibitz.com/
+- https://www.hilaryliftin.com/
 - https://www.murielwilkins.com/
 
 ---

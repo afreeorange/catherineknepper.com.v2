@@ -377,6 +377,22 @@ footer {
   }
 }
 
+back-to-top {
+  @apply fixed bottom-4 right-4;
+
+  a {
+    @apply block rounded-full transition-all p-1;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
 @keyframes logo-scroll {
   0% {
     transform: translateX(0);
