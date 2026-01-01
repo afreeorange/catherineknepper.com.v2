@@ -96,8 +96,9 @@ export const App = () => (
     </main>
 
     <footer>
-      &copy; {new Date().getFullYear()}, Catherine Knepper Writing Services,
-      LLC. <br />I respect your privacy and use{" "}
+      &copy; {new Date().getFullYear()},{" "}
+      <strong>Catherine Knepper Writing Services, LLC</strong>. <br />I respect
+      your privacy and use{" "}
       <a
         href="https://plausible.io"
         title={"I use Plausible, a privacy-friendly web analytics solution."}

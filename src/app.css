@@ -5,12 +5,12 @@ html,
 body {
   @apply scroll-smooth w-full;
   font-family: "Louize";
-  background: #0c1035;
+  background: #000;
   color: white;
 }
 
 header {
-  @apply flex gap-4 justify-between items-center p-6;
+  @apply md:flex gap-4 justify-between items-center p-6 w-full z-10;
   font-family: "Louize Display";
 
   h1 {
@@ -18,17 +18,17 @@ header {
   }
 
   /* Hamburger button - visible below md */
-  .hamburger {
+  /* .hamburger {
     @apply md:hidden cursor-pointer z-50;
 
     svg {
       @apply w-10 h-10;
     }
-  }
+  } */
 
   /* Desktop nav - hidden below md */
   nav ul {
-    @apply hidden md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
+    @apply md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
 
     li {
       @apply text-right;
@@ -69,7 +69,7 @@ header {
 }
 
 h2 {
-  @apply text-6xl max-w-7xl mx-auto text-orange-500;
+  @apply text-5xl md:text-6xl max-w-7xl mx-auto text-orange-500;
   font-family: "Eksell Display";
 
   em {
@@ -141,7 +141,7 @@ above-fold {
 }
 
 section {
-  @apply px-6 py-12;
+  @apply px-6 py-8;
   scrollbar-color: var(--color-orange-500) #080f4f;
 
   &::-webkit-scrollbar {
@@ -161,24 +161,36 @@ section {
 }
 
 section[id="hello"] {
-  @apply text-xl pt-4 max-w-7xl mx-auto pr-72;
+  @apply hidden md:block text-xl max-w-7xl mx-auto;
+
+  section-wrapper {
+    @apply block mr-96;
+  }
 
   p:nth-of-type(1) {
     font-family: "Eksell Display";
     @apply text-5xl text-orange-500;
   }
+
+  small {
+    @apply opacity-60 italic;
+
+    a {
+      @apply underline underline-offset-4;
+    }
+  }
 }
 
 section[id="more-about-me"] {
-  @apply bg-orange-800 pb-4;
+  @apply bg-blue-900 pb-4;
 
   h2 {
-    @apply text-amber-300;
+    @apply text-amber-400;
   }
 
   /* background: #080f4f; */
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-2xl;
+    @apply block max-w-7xl mx-auto text-xl;
   }
 }
 
@@ -248,10 +260,14 @@ section[id="clients"] {
   /* @apply border-t border-t-amber-600; */
 
   ul {
-    @apply list-none columns-2 md:gap-12 md:columns-3 text-2xl md:text-3xl mt-12 max-w-7xl mx-auto;
+    @apply columns-2 md:gap-12 md:columns-3 text-xl md:text-3xl mt-12 max-w-7xl mx-auto;
+    /* list-style-type: "+ "; */
+    li::marker {
+      color: lightblue;
+    }
 
     li {
-      @apply block border-b break-inside-avoid border-blue-500 border-dotted;
+      @apply break-inside-avoid border-b border-blue-500 border-dashed;
     }
 
     li {
@@ -269,13 +285,13 @@ section[id="testimonials"] {
   /* @apply border-t border-t-amber-600; */
 
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-3xl;
+    @apply block max-w-7xl mx-auto text-xl md:text-3xl;
 
     figure {
       @apply my-12;
 
       blockquote + figcaption {
-        @apply relative mb-8 ml-6 mt-4 text-2xl;
+        @apply relative mb-8 ml-6 mt-4;
         @apply text-blue-300;
       }
 
@@ -300,7 +316,7 @@ section[id="services"] {
   /* @apply border-t border-t-amber-600; */
 
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-3xl;
+    @apply block max-w-7xl mx-auto text-xl md:text-3xl;
 
     service-section {
       @apply block pt-8 border-t border-dotted border-blue-500;
@@ -318,7 +334,7 @@ section[id="services"] {
 
 section[id="contact"] {
   background: #0c1035;
-  @apply text-3xl;
+  @apply text-2xl;
 
   section-wrapper {
     @apply block max-w-7xl mx-auto mt-12;
@@ -330,7 +346,7 @@ section[id="contact"] {
   }
 
   span {
-    @apply flex items-center mb-2 md:m-0;
+    @apply flex items-center mb-2 md:m-0 text-2xl md:text-3xl;
   }
 
   input,
@@ -348,7 +364,7 @@ section[id="contact"] {
 
   button[type="submit"] {
     font-family: "Eksell Display";
-    @apply w-full text-5xl py-6 tracking-wide flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
+    @apply w-full py-6 tracking-wide flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
 
     &:hover {
       @apply bg-orange-500 cursor-pointer text-white;
@@ -358,15 +374,24 @@ section[id="contact"] {
       }
     }
 
+    span {
+      @apply text-5xl;
+    }
+
     svg {
-      @apply ml-4 mt-2 text-3xl fill-orange-500;
+      @apply ml-3 mt-1 text-4xl fill-orange-500;
     }
   }
 }
 
 footer {
-  @apply max-w-7xl mx-auto mt-8 mb-36 text-2xl px-6 md:text-center;
+  @apply mt-12 mb-36 py-4 text-2xl px-6 md:text-center;
   font-family: "Louize Display";
+  background: #000;
+
+  /* background: url("/catherine/labyrinth.png");
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat; */
 
   a {
     @apply underline underline-offset-4;
@@ -374,6 +399,23 @@ footer {
 
   br {
     @apply hidden md:block;
+  }
+
+  strong {
+    font-family: "Eksell Display";
+    font-weight: 400;
+  }
+
+  &::before {
+    @apply bg-current block mx-auto mb-12;
+    color: red;
+    width: 12rem;
+    height: 12rem;
+    content: "\0a0";
+    mask-image: url(/catherine/labyrinth-simple.png);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
   }
 }
 
