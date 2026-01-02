@@ -129,4 +129,25 @@ $(document).ready(function () {
       scrollbar.removeClass("dragging");
     });
   }
+
+  // Back-to-top visibility based on <nav> element
+  const navigationElement = $("header nav")[0];
+  const backToTop = $("back-to-top");
+
+  if (navigationElement && backToTop.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            backToTop.removeClass("visible");
+          } else {
+            backToTop.addClass("visible");
+          }
+        });
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(navigationElement);
+  }
 });

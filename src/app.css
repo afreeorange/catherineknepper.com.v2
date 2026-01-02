@@ -21,62 +21,23 @@ body {
 }
 
 header {
-  @apply md:flex gap-4 justify-between items-center p-6 w-full z-10;
+  @apply md:flex gap-4 justify-between items-center p-4 md:p-6 w-full z-10;
   font-family: "Louize Display";
 
   h1 {
     @apply uppercase font-bold text-5xl;
   }
 
-  /* Hamburger button - visible below md */
-  /* .hamburger {
-    @apply md:hidden cursor-pointer z-50;
+  nav {
+    @apply mt-80 md:mt-0;
 
-    svg {
-      @apply w-10 h-10;
-    }
-  } */
+    ul {
+      @apply md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
 
-  /* Desktop nav - hidden below md */
-  nav ul {
-    @apply md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
-
-    li {
-      @apply text-right;
+      li {
+      }
     }
   }
-}
-
-/* Hidden checkbox for menu state */
-.menu-checkbox {
-  @apply hidden;
-}
-
-/* Mobile menu overlay */
-.mobile-menu {
-  @apply fixed inset-0 bg-[#0c1035]/95 z-40 flex-col items-center justify-center hidden;
-  font-family: "Louize Display";
-
-  .close-btn {
-    @apply absolute top-6 right-6 cursor-pointer;
-
-    svg {
-      @apply w-10 h-10;
-    }
-  }
-
-  ul {
-    @apply flex flex-col gap-8 text-4xl text-center;
-
-    a {
-      @apply block py-2;
-    }
-  }
-}
-
-/* Show menu when checkbox is checked */
-.menu-checkbox:checked ~ header ~ .mobile-menu {
-  @apply flex;
 }
 
 h2 {
@@ -141,16 +102,6 @@ p {
   }
 }
 
-above-fold {
-  @apply block bg-top-right;
-  background-image: url("/assets/img/catherine/about.webp");
-  background-size: cover;
-
-  p {
-    @apply text-3xl;
-  }
-}
-
 section {
   @apply px-4 py-8;
   scrollbar-color: var(--color-orange-500) #080f4f;
@@ -171,20 +122,35 @@ section {
   }
 }
 
-section[id="hello"] {
-  @apply hidden md:block text-xl max-w-7xl mx-auto;
+above-fold {
+  @apply block;
 
-  section-wrapper {
-    @apply block mr-96;
+  top-chunk {
+    @apply block w-full bg-top-right pb-8 bg-no-repeat md:bg-none;
+    background-image: url("/assets/img/catherine/about.webp");
+    background-size: 110rem;
+    background-color: red;
   }
 
-  p:nth-of-type(1) {
+  big {
     font-family: "Eksell Display";
-    @apply text-5xl text-orange-500;
+    @apply block text-4xl md:text-5xl px-4 text-orange-500 bg-black/70 py-4;
+  }
+
+  section[id="hello"] {
+    @apply py-2 bg-gray-900;
+  }
+
+  p:first-of-type {
+    @apply text-2xl;
+  }
+
+  p:not(:first-of-type) {
+    @apply text-xl;
   }
 
   small {
-    @apply opacity-60 italic;
+    @apply opacity-75 italic text-xl;
 
     a {
       @apply underline underline-offset-4;
@@ -272,7 +238,7 @@ section[id="books"] {
         @apply hover:cursor-pointer;
 
         img {
-          @apply h-20 md:h-24 opacity-75 invert;
+          @apply h-24 md:h-28 opacity-75 invert;
         }
       }
 
@@ -472,7 +438,11 @@ footer {
 }
 
 back-to-top {
-  @apply fixed bottom-4 right-4;
+  @apply fixed bottom-4 right-4 opacity-0 pointer-events-none transition-opacity duration-300;
+
+  &.visible {
+    @apply opacity-100 pointer-events-auto;
+  }
 
   a {
     @apply block rounded-full transition-all p-1;

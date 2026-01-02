@@ -33,41 +33,28 @@ export const App = () => {
   return (
     <>
       <above-fold>
-        <input type="checkbox" id="menu-toggle" className="menu-checkbox" />
-        <header id={"top"}>
-          <h1>Catherine Knepper</h1>
-          <nav>
-            <ul>
-              {NAVIGATION.map((_) => (
-                <li>
-                  <a href={_.link} title={_.title}>
-                    {_.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          {/* <label htmlFor="menu-toggle" className="hamburger">
-          <HamburgerIcon />
-        </label> */}
-        </header>
-        {/* <div className="mobile-menu">
-        <label htmlFor="menu-toggle" className="close-btn">
-          <CloseIcon />
-        </label>
-        <ul>
-          {NAVIGATION.map((_) => (
-            <li key={_.link}>
-              <label htmlFor="menu-toggle">
-                <a href={_.link} title={_.title}>
-                  {_.label}
-                </a>
-              </label>
-            </li>
-          ))}
-        </ul>
-      </div> */}
-        {/* <Hello /> */}
+        <top-chunk>
+          <header id={"top"}>
+            <h1>Catherine Knepper</h1>
+            <nav>
+              <ul>
+                {NAVIGATION.map((_) => (
+                  <li>
+                    <a href={_.link} title={_.title}>
+                      {_.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </header>
+
+          <big>
+            I help writers, experts, and leaders turn complex ideas into books
+            that matter.
+          </big>
+        </top-chunk>
+        <Hello />
       </above-fold>
 
       <main>

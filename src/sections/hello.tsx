@@ -2,10 +2,6 @@ export const Hello = () => (
   <section id="hello">
     <section-wrapper>
       <p>
-        I help writers, experts, and leaders turn complex ideas into books that
-        matter.
-      </p>
-      <p>
         For over twenty years, I've worked with people who have something vital
         to say and need a skilled partner to help them say it well. Whether
         you're distilling decades of professional insight, uncovering the
