@@ -16,12 +16,43 @@ html,
 body {
   @apply w-full scroll-smooth;
   font-family: "Louize";
-  background: #000;
   color: white;
+
+  background: radial-gradient(
+      circle at top,
+      transparent 60%,
+      #2d1600 61%,
+      #2d1600 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at bottom,
+      transparent 60%,
+      #2d1600 61%,
+      #2d1600 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 60%,
+      #2d1600 61%,
+      #2d1600 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 60%,
+      #2d1600 61%,
+      #2d1600 66%,
+      transparent 67%
+    );
+  background-size: 2em 2em;
+  background-color: #000000;
+  opacity: 1;
 }
 
 header {
-  @apply z-10 md:flex justify-between items-center gap-4 p-4 md:p-6 w-full;
+  @apply z-10 lg:flex justify-between items-center gap-4 p-4 lg:p-6 w-full;
   font-family: "Louize Display";
 
   h1 {
@@ -29,10 +60,10 @@ header {
   }
 
   nav {
-    @apply mt-8 md:mt-0;
+    @apply mt-8 lg:mt-0;
 
     ul {
-      @apply md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
+      @apply lg:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
 
       li {
       }
@@ -41,7 +72,7 @@ header {
 }
 
 h2 {
-  @apply mx-auto max-w-7xl text-orange-500 text-5xl md:text-6xl text-center;
+  @apply mx-auto max-w-7xl text-orange-500 text-5xl lg:text-6xl text-center;
   font-family: "Eksell Display";
 
   em {
@@ -123,27 +154,27 @@ section {
 }
 
 above-fold {
-  @apply block md:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
+  @apply block lg:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
 
   top-chunk {
-    @apply h-[95vh] md:h-auto block w-full bg-top-right md:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover md:bg-none;
+    @apply h-[95vh] lg:h-auto block w-full bg-top-right lg:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover lg:bg-none;
   }
 
   big {
     font-family: "Eksell Display";
-    @apply block backdrop-grayscale-50 mx-auto md:mt-12 md:py-0 max-w-7xl text-orange-500 text-4xl md:text-5xl;
+    @apply block backdrop-grayscale-50 mx-auto lg:mt-0 lg:py-0 max-w-7xl text-orange-500 text-4xl lg:text-5xl;
   }
 
   section[id="hello"] {
-    @apply bg-gray-900 md:bg-transparent mx-auto py-2 pt-8 md:pr-[500px] max-w-7xl;
+    @apply bg-gray-900 lg:bg-transparent mx-auto py-2 pt-8 lg:pr-[500px] max-w-7xl;
   }
 
   p:first-of-type {
-    @apply text-2xl md:text-3xl;
+    @apply text-2xl lg:text-3xl;
   }
 
   p:not(:first-of-type) {
-    @apply text-xl md:text-2xl;
+    @apply text-xl lg:text-2xl;
   }
 
   small {
@@ -164,10 +195,10 @@ section[id="more-about-me"] {
 
   /* background: #080f4f; */
   section-wrapper {
-    @apply block mx-auto max-w-7xl text-xl md:text-2xl;
+    @apply block mx-auto max-w-7xl text-xl lg:text-2xl;
 
     p:nth-of-type(1) {
-      @apply text-2xl md:text-3xl;
+      @apply text-2xl lg:text-3xl;
     }
   }
 }
@@ -200,7 +231,7 @@ section[id="books"] {
       }
 
       li {
-        @apply min-w-36 md:min-w-48 h-auto;
+        @apply min-w-36 lg:min-w-48 h-auto;
       }
     }
 
@@ -235,7 +266,7 @@ section[id="books"] {
         @apply hover:cursor-pointer;
 
         img {
-          @apply opacity-75 invert h-24 md:h-28;
+          @apply opacity-75 invert h-24 lg:h-28;
         }
       }
 
@@ -269,12 +300,12 @@ section[id="clients"] {
 
     carousel-prev,
     carousel-next {
-      @apply md:hidden;
+      @apply lg:hidden;
     }
   }
 
   section-wrapper {
-    @apply gap-12 grid md:grid-cols-3 mx-auto my-8 md:my-12 max-w-7xl text-2xl;
+    @apply gap-12 grid lg:grid-cols-3 mx-auto my-8 lg:my-12 max-w-7xl text-2xl;
 
     ul {
       li {
@@ -297,7 +328,7 @@ section[id="testimonials"] {
   }
 
   section-wrapper {
-    @apply block mx-auto max-w-7xl text-xl md:text-3xl;
+    @apply block mx-auto max-w-7xl text-xl lg:text-3xl;
 
     figure {
       @apply my-12 mb-0;
@@ -327,7 +358,7 @@ section[id="services"] {
   background: #131b66;
 
   section-wrapper {
-    @apply block mx-auto max-w-7xl text-xl md:text-3xl;
+    @apply block mx-auto max-w-7xl text-xl lg:text-3xl;
 
     service-section {
       @apply block pt-8 border-blue-500 border-t;
@@ -335,7 +366,7 @@ section[id="services"] {
   }
 
   ul {
-    @apply space-y-4 my-8 ml-4 md:ml-0 list-disc;
+    @apply space-y-4 my-8 ml-4 lg:ml-0 list-disc;
 
     li::marker {
       @apply text-blue-400;
@@ -356,12 +387,12 @@ section[id="contact"] {
   }
 
   label {
-    @apply md:gap-8 md:grid md:grid-cols-2;
+    @apply lg:gap-8 lg:grid lg:grid-cols-2;
     grid-template-columns: 150px auto;
   }
 
   span {
-    @apply flex items-center md:m-0 mb-2 text-2xl md:text-3xl;
+    @apply flex items-center lg:m-0 mb-2 text-2xl lg:text-3xl;
   }
 
   input,
@@ -374,7 +405,7 @@ section[id="contact"] {
   }
 
   p:last-child {
-    @apply md:pl-[180px];
+    @apply lg:pl-[180px];
   }
 
   button[type="submit"] {
@@ -400,7 +431,7 @@ section[id="contact"] {
 }
 
 footer {
-  @apply mt-12 mb-36 px-6 py-4 text-2xl md:text-center;
+  @apply px-6 py-4 pt-12 pb-36 text-2xl lg:text-center;
   font-family: "Louize Display";
   background: #000;
 
@@ -413,7 +444,7 @@ footer {
   }
 
   br {
-    @apply hidden md:block;
+    @apply hidden lg:block;
   }
 
   strong {
