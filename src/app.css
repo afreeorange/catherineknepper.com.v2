@@ -126,7 +126,7 @@ above-fold {
   @apply block md:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
 
   top-chunk {
-    @apply h-[90vh] md:h-auto block w-full bg-top-right md:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover md:bg-none;
+    @apply h-[95vh] md:h-auto block w-full bg-top-right md:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover md:bg-none;
   }
 
   big {
