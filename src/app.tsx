@@ -33,22 +33,24 @@ export const App = () => {
   return (
     <>
       <above-fold>
-        <top-chunk>
-          <header id={"top"}>
-            <h1>Catherine Knepper</h1>
-            <nav>
-              <ul>
-                {NAVIGATION.map((_) => (
-                  <li>
-                    <a href={_.link} title={_.title}>
-                      {_.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </header>
-        </top-chunk>
+        <header id={"top"}>
+          <h1>
+            <a href="/" title="Catherine Knepper Writing Services, LLC.">
+              Catherine Knepper
+            </a>
+          </h1>
+          <nav>
+            <ul>
+              {NAVIGATION.map((_) => (
+                <li>
+                  <a href={_.link} title={_.title}>
+                    {_.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header>
         <Hello />
       </above-fold>
 

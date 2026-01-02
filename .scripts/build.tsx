@@ -17,13 +17,14 @@ import App from "../src/app";
 
   await fs.writeFile(
     "./dist/index.html",
-    render(
-      <Shell>
-        <App />
-      </Shell>,
-      {},
-      { pretty: true }
-    )
+    "<!DOCTYPE html>" +
+      render(
+        <Shell>
+          <App />
+        </Shell>,
+        {},
+        { pretty: true }
+      )
   );
 
   console.log("Building CSS");

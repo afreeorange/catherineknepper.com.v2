@@ -52,7 +52,8 @@ body {
 }
 
 header {
-  @apply z-10 lg:flex justify-between items-center gap-4 p-4 lg:p-6 w-full;
+  @apply z-10 lg:flex justify-between items-center gap-4 p-4 lg:p-6 w-full h-[95vh] lg:h-auto block bg-top-right lg:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover lg:bg-none;
+
   font-family: "Louize Display";
 
   h1 {
@@ -155,10 +156,6 @@ section {
 
 above-fold {
   @apply block lg:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
-
-  top-chunk {
-    @apply h-[95vh] lg:h-auto block w-full bg-top-right lg:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover lg:bg-none;
-  }
 
   big {
     font-family: "Eksell Display";
