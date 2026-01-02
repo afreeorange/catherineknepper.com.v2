@@ -19,33 +19,33 @@ body {
   color: white;
 
   background: radial-gradient(
-      circle at top,
-      transparent 60%,
-      #2d1600 61%,
-      #2d1600 66%,
-      transparent 67%
+      circle at center bottom,
+      #333333 5%,
+      transparent 6%,
+      transparent 19%,
+      #333333 20%,
+      #333333 25%,
+      transparent 26%,
+      transparent 39%,
+      #333333 40%,
+      #333333 45%,
+      transparent 46%
     ),
     radial-gradient(
-      circle at bottom,
-      transparent 60%,
-      #2d1600 61%,
-      #2d1600 66%,
-      transparent 67%
+      circle at center top,
+      #333333 5%,
+      transparent 6%,
+      transparent 19%,
+      #333333 20%,
+      #333333 25%,
+      transparent 26%,
+      transparent 39%,
+      #333333 40%,
+      #333333 45%,
+      transparent 46%
     ),
-    radial-gradient(
-      circle at left,
-      transparent 60%,
-      #2d1600 61%,
-      #2d1600 66%,
-      transparent 67%
-    ),
-    radial-gradient(
-      circle at right,
-      transparent 60%,
-      #2d1600 61%,
-      #2d1600 66%,
-      transparent 67%
-    );
+    radial-gradient(circle at left, #333333 5%, transparent 6%),
+    radial-gradient(circle at right, #333333 5%, transparent 6%);
   background-size: 2em 2em;
   background-color: #000000;
   opacity: 1;
@@ -162,7 +162,7 @@ above-fold {
 
   big {
     font-family: "Eksell Display";
-    @apply block backdrop-grayscale-50 mx-auto lg:mt-0 lg:py-0 max-w-7xl text-orange-500 text-4xl lg:text-5xl;
+    @apply block backdrop-grayscale-50 mx-auto lg:mt-8 lg:py-0 max-w-7xl text-orange-500 text-4xl lg:text-5xl;
   }
 
   section[id="hello"] {
