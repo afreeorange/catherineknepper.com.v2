@@ -1,5 +1,16 @@
 @import "tailwindcss";
 @import "./fonts.css";
+@import "./carousel.css";
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves exactly half the track width (the first set of 10) */
+    transform: translateX(-50%);
+  }
+}
 
 html,
 body {
@@ -69,7 +80,7 @@ header {
 }
 
 h2 {
-  @apply text-5xl md:text-6xl max-w-7xl mx-auto text-orange-500;
+  @apply text-5xl md:text-6xl max-w-7xl mx-auto text-orange-500 text-center;
   font-family: "Eksell Display";
 
   em {
@@ -80,7 +91,7 @@ h2 {
 }
 
 h3 {
-  @apply text-4xl text-orange-400 max-w-7xl mx-auto;
+  @apply text-4xl text-orange-400 max-w-7xl mx-auto text-center;
   font-family: "Eksell Display";
 
   em {
@@ -91,7 +102,7 @@ h3 {
 }
 
 h4 {
-  @apply text-3xl text-amber-400;
+  @apply text-3xl text-amber-400 text-center;
   font-family: "Eksell Display";
   /* font-weight: normal; */
 
@@ -132,7 +143,7 @@ p {
 
 above-fold {
   @apply block bg-top-right;
-  background-image: url("/catherine/about.webp");
+  background-image: url("/assets/img/catherine/about.webp");
   background-size: cover;
 
   p {
@@ -141,7 +152,7 @@ above-fold {
 }
 
 section {
-  @apply px-6 py-8;
+  @apply px-4 py-8;
   scrollbar-color: var(--color-orange-500) #080f4f;
 
   &::-webkit-scrollbar {
@@ -190,16 +201,20 @@ section[id="more-about-me"] {
 
   /* background: #080f4f; */
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-xl;
+    @apply block max-w-7xl mx-auto text-xl md:text-2xl;
+
+    p:nth-of-type(1) {
+      @apply text-2xl;
+    }
   }
 }
 
 section[id="books"] {
-  @apply overflow-hidden bg-indigo-900;
+  @apply overflow-hidden bg-indigo-900 px-0;
   /* @apply border-t border-t-amber-600; */
 
   h2 {
-    @apply mb-8;
+    @apply mb-8 px-4;
   }
 
   h3 {
@@ -282,16 +297,20 @@ section[id="clients"] {
 
 section[id="testimonials"] {
   background: #070d41;
-  /* @apply border-t border-t-amber-600; */
+  @apply pb-12;
+
+  section-header {
+    @apply inline-flex w-full items-center;
+  }
 
   section-wrapper {
     @apply block max-w-7xl mx-auto text-xl md:text-3xl;
 
     figure {
-      @apply my-12;
+      @apply my-12 mb-0;
 
       blockquote + figcaption {
-        @apply relative mb-8 ml-6 mt-4;
+        @apply relative mb-0 ml-6 mt-8;
         @apply text-blue-300;
       }
 
@@ -412,7 +431,7 @@ footer {
     width: 12rem;
     height: 12rem;
     content: "\0a0";
-    mask-image: url(/catherine/labyrinth-simple.png);
+    mask-image: url(/assets/img/catherine/labyrinth.png);
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
@@ -432,15 +451,5 @@ back-to-top {
 
   a:hover {
     background: rgba(255, 255, 255, 1);
-  }
-}
-
-@keyframes logo-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* Moves exactly half the track width (the first set of 10) */
-    transform: translateX(-50%);
   }
 }

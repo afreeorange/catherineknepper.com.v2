@@ -17,6 +17,12 @@ importers:
       '@tailwindcss/cli':
         specifier: ^4.1.18
         version: 4.1.18
+      embla-carousel:
+        specifier: ^8.6.0
+        version: 8.6.0
+      embla-carousel-auto-height:
+        specifier: ^8.6.0
+        version: 8.6.0(embla-carousel@8.6.0)
       preact:
         specifier: ^10.27.2
         version: 10.28.1
@@ -902,6 +908,14 @@ packages:
 
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
+
+  embla-carousel-auto-height@8.6.0:
+    resolution: {integrity: sha512-/HrJQOEM6aol/oF33gd2QlINcXy3e19fJWvHDuHWp2bpyTa+2dm9tVVJak30m2Qy6QyQ6Fc8DkImtv7pxWOJUQ==}
+    peerDependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel@8.6.0:
+    resolution: {integrity: sha512-SjWyZBHJPbqxHOzckOfo8lHisEaJWmwd23XppYFYVh10bU66/Pn5tkVkbkCMZVdbUE5eTCI2nD8OyIP4Z+uwkA==}
 
   enhanced-resolve@5.18.4:
     resolution: {integrity: sha512-LgQMM4WXU3QI+SYgEc2liRgznaD5ojbmY3sb8LxyguVkIg5FxdpTkvk72te2R38/TGKxH634oLxXRGY6d7AP+Q==}
@@ -2222,6 +2236,12 @@ snapshots:
       domhandler: 5.0.3
 
   electron-to-chromium@1.5.267: {}
+
+  embla-carousel-auto-height@8.6.0(embla-carousel@8.6.0):
+    dependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel@8.6.0: {}
 
   enhanced-resolve@5.18.4:
     dependencies:

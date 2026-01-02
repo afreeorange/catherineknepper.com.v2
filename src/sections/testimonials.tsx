@@ -1,6 +1,11 @@
 export const Testimonials = () => (
   <section id="testimonials">
-    <h2>Testimonials</h2>
+    <section-header>
+      <carousel-prev />
+      <h2>Testimonials</h2>
+      <carousel-next />
+    </section-header>
+    <carousel-dots />
     <section-wrapper>
       <figure>
         <blockquote>

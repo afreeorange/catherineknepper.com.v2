@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import { exec } from "node:child_process";
 
 import { h } from "preact";
-import { render } from "preact-render-to-string";
+import { render } from "preact-render-to-string/jsx";
 
 import { Shell } from "../src/components";
 import App from "../src/app";
@@ -20,7 +20,9 @@ import App from "../src/app";
     render(
       <Shell>
         <App />
-      </Shell>
+      </Shell>,
+      {},
+      { pretty: true }
     )
   );
 

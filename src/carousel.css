@@ -1,0 +1,150 @@
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  /* height: 100%; */
+  /* min-height: 1px; */
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Previous and Next Buttons */
+carousel-prev,
+carousel-next {
+  @apply block w-6 h-6 md:w-8 md:h-8 transition-all opacity-15;
+  background: white;
+
+  content: "\0a0";
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  cursor: pointer;
+}
+carousel-prev:hover,
+carousel-next:hover {
+  @apply opacity-100;
+}
+
+carousel-prev {
+  mask-image: url(/assets/img/arrow-prev.svg);
+}
+
+carousel-next {
+  mask-image: url(/assets/img/arrow-next.svg);
+}
+
+/* Dots */
+carousel-dots {
+  @apply block text-center w-full mt-4 mb-0 leading-0;
+
+  ul {
+    @apply inline-flex flex-wrap gap-x-4 justify-evenly w-fit mx-auto;
+
+    li {
+      @apply my-1;
+      button {
+        @apply rounded-full block bg-white w-2 h-2 md:w-3 md:h-3 cursor-pointer;
+        font-size: 0;
+      }
+    }
+
+    li:not(.slick-active) {
+      button {
+        @apply opacity-25;
+      }
+    }
+
+    li:hover {
+      button {
+        @apply opacity-75;
+      }
+    }
+  }
+}

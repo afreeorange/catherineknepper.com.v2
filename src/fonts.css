@@ -1,7 +1,7 @@
 /* Eksell Display */
 @font-face {
   font-family: "Eksell Display";
-  src: url("/fonts/EksellDisplay-Large.woff2") format("woff2");
+  src: url("/assets/fonts/EksellDisplay-Large.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Eksell Display";
-  src: url("/fonts/EksellDisplay-Medium.woff2") format("woff2");
+  src: url("/assets/fonts/EksellDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Eksell Display";
-  src: url("/fonts/EksellDisplay-Small.woff2") format("woff2");
+  src: url("/assets/fonts/EksellDisplay-Small.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 /* Louize */
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize.woff2") format("woff2");
+  src: url("/assets/fonts/Louize.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize-Italic.woff2") format("woff2");
+  src: url("/assets/fonts/Louize-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize-Medium.woff2") format("woff2");
+  src: url("/assets/fonts/Louize-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize-MediumItalic.woff2") format("woff2");
+  src: url("/assets/fonts/Louize-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/Louize-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -66,7 +66,7 @@
 
 @font-face {
   font-family: "Louize";
-  src: url("/fonts/Louize-BoldItalic.woff2") format("woff2");
+  src: url("/assets/fonts/Louize-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -75,7 +75,7 @@
 /* Louize Display */
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -83,7 +83,7 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay-Italic.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -91,7 +91,7 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay-Medium.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -99,7 +99,7 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay-MediumItalic.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -107,7 +107,7 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay-Bold.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -115,7 +115,7 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url("/fonts/LouizeDisplay-BoldItalic.woff2") format("woff2");
+  src: url("/assets/fonts/LouizeDisplay-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
