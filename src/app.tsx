@@ -48,11 +48,6 @@ export const App = () => {
               </ul>
             </nav>
           </header>
-
-          <big>
-            I help writers, experts, and leaders turn complex ideas into books
-            that matter.
-          </big>
         </top-chunk>
         <Hello />
       </above-fold>

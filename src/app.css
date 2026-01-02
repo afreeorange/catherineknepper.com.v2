@@ -14,22 +14,22 @@
 
 html,
 body {
-  @apply scroll-smooth w-full;
+  @apply w-full scroll-smooth;
   font-family: "Louize";
   background: #000;
   color: white;
 }
 
 header {
-  @apply md:flex gap-4 justify-between items-center p-4 md:p-6 w-full z-10;
+  @apply z-10 md:flex justify-between items-center gap-4 p-4 md:p-6 w-full;
   font-family: "Louize Display";
 
   h1 {
-    @apply uppercase font-bold text-5xl;
+    @apply font-bold text-5xl uppercase;
   }
 
   nav {
-    @apply mt-80 md:mt-0;
+    @apply mt-8 md:mt-0;
 
     ul {
       @apply md:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
@@ -41,7 +41,7 @@ header {
 }
 
 h2 {
-  @apply text-5xl md:text-6xl max-w-7xl mx-auto text-orange-500 text-center;
+  @apply mx-auto max-w-7xl text-orange-500 text-5xl md:text-6xl text-center;
   font-family: "Eksell Display";
 
   em {
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-  @apply text-4xl text-orange-400 max-w-7xl mx-auto text-center;
+  @apply mx-auto max-w-7xl text-orange-400 text-4xl text-center;
   font-family: "Eksell Display";
 
   em {
@@ -63,7 +63,7 @@ h3 {
 }
 
 h4 {
-  @apply text-3xl text-amber-400 text-center;
+  @apply text-amber-400 text-3xl text-center;
   font-family: "Eksell Display";
   /* font-weight: normal; */
 
@@ -79,10 +79,10 @@ p {
 }
 
 .book-cover {
-  @apply relative h-fit rounded-l-sm rounded-r-lg;
+  @apply relative rounded-r-lg rounded-l-sm h-fit;
 
   img {
-    @apply block rounded-l-sm rounded-r-md;
+    @apply block rounded-r-md rounded-l-sm;
     box-shadow: 3px 3px 8px -2px #000;
   }
 
@@ -123,34 +123,31 @@ section {
 }
 
 above-fold {
-  @apply block;
+  @apply block md:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
 
   top-chunk {
-    @apply block w-full bg-top-right pb-8 bg-no-repeat md:bg-none;
-    background-image: url("/assets/img/catherine/about.webp");
-    background-size: 110rem;
-    background-color: red;
+    @apply h-[90vh] md:h-auto block w-full bg-top-right md:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover md:bg-none;
   }
 
   big {
     font-family: "Eksell Display";
-    @apply block text-4xl md:text-5xl px-4 text-orange-500 bg-black/70 py-4;
+    @apply block backdrop-grayscale-50 mx-auto md:mt-12 md:py-0 max-w-7xl text-orange-500 text-4xl md:text-5xl;
   }
 
   section[id="hello"] {
-    @apply py-2 bg-gray-900;
+    @apply bg-gray-900 md:bg-transparent mx-auto py-2 pt-8 md:pr-[500px] max-w-7xl;
   }
 
   p:first-of-type {
-    @apply text-2xl;
+    @apply text-2xl md:text-3xl;
   }
 
   p:not(:first-of-type) {
-    @apply text-xl;
+    @apply text-xl md:text-2xl;
   }
 
   small {
-    @apply opacity-75 italic text-xl;
+    @apply opacity-75 text-xl italic;
 
     a {
       @apply underline underline-offset-4;
@@ -167,7 +164,7 @@ section[id="more-about-me"] {
 
   /* background: #080f4f; */
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-xl md:text-2xl;
+    @apply block mx-auto max-w-7xl text-xl md:text-2xl;
 
     p:nth-of-type(1) {
       @apply text-2xl md:text-3xl;
@@ -176,7 +173,7 @@ section[id="more-about-me"] {
 }
 
 section[id="books"] {
-  @apply overflow-hidden bg-indigo-900;
+  @apply bg-indigo-900 overflow-hidden;
   /* @apply border-t border-t-amber-600; */
 
   h2 {
@@ -193,7 +190,7 @@ section[id="books"] {
     @apply block relative;
 
     ul {
-      @apply grid overflow-x-scroll gap-x-6 items-end pb-4 mx-auto;
+      @apply items-end gap-x-6 grid mx-auto pb-4 overflow-x-scroll;
       grid-auto-flow: column;
       scrollbar-width: none;
       -ms-overflow-style: none;
@@ -212,11 +209,11 @@ section[id="books"] {
     }
 
     books-wrapper-scroll {
-      @apply block relative h-2 mt-4 mx-auto rounded-full w-75 cursor-pointer;
+      @apply block relative mx-auto mt-4 rounded-full w-75 h-2 cursor-pointer;
       background: rgba(255, 255, 255, 0.2);
 
       div {
-        @apply absolute top-0 h-full rounded-full transition-all bg-orange-500;
+        @apply top-0 absolute bg-orange-500 rounded-full h-full transition-all;
         transition: width 0.1s, left 0.1s;
       }
 
@@ -238,7 +235,7 @@ section[id="books"] {
         @apply hover:cursor-pointer;
 
         img {
-          @apply h-24 md:h-28 opacity-75 invert;
+          @apply opacity-75 invert h-24 md:h-28;
         }
       }
 
@@ -264,7 +261,7 @@ section[id="clients"] {
   background: #0d187f;
 
   section-header {
-    @apply inline-flex w-full items-center;
+    @apply inline-flex items-center w-full;
 
     h1 {
       word-break: break-all;
@@ -277,7 +274,7 @@ section[id="clients"] {
   }
 
   section-wrapper {
-    @apply text-2xl grid md:grid-cols-3 max-w-7xl mx-auto gap-12 my-8 md:my-12;
+    @apply gap-12 grid md:grid-cols-3 mx-auto my-8 md:my-12 max-w-7xl text-2xl;
 
     ul {
       li {
@@ -285,7 +282,7 @@ section[id="clients"] {
       }
 
       li:not(:last-of-type) {
-        @apply border-b border-blue-500 border-dotted;
+        @apply border-blue-500 border-b;
       }
     }
   }
@@ -296,23 +293,23 @@ section[id="testimonials"] {
   @apply pb-12;
 
   section-header {
-    @apply inline-flex w-full items-center;
+    @apply inline-flex items-center w-full;
   }
 
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-xl md:text-3xl;
+    @apply block mx-auto max-w-7xl text-xl md:text-3xl;
 
     figure {
       @apply my-12 mb-0;
 
       blockquote + figcaption {
-        @apply relative mb-0 ml-6 mt-8;
+        @apply relative mt-8 mb-0 ml-6;
         @apply text-blue-300;
       }
 
       blockquote + figcaption::before {
         content: "\2013";
-        @apply absolute -left-6;
+        @apply -left-6 absolute;
       }
 
       blockquote + figcaption strong {
@@ -330,15 +327,15 @@ section[id="services"] {
   background: #131b66;
 
   section-wrapper {
-    @apply block max-w-7xl mx-auto text-xl md:text-3xl;
+    @apply block mx-auto max-w-7xl text-xl md:text-3xl;
 
     service-section {
-      @apply block pt-8 border-t border-dotted border-blue-500;
+      @apply block pt-8 border-blue-500 border-t;
     }
   }
 
   ul {
-    @apply list-disc ml-4 md:ml-0 space-y-4 my-8;
+    @apply space-y-4 my-8 ml-4 md:ml-0 list-disc;
 
     li::marker {
       @apply text-blue-400;
@@ -355,21 +352,21 @@ section[id="contact"] {
   @apply text-2xl;
 
   section-wrapper {
-    @apply block max-w-7xl mx-auto mt-12;
+    @apply block mx-auto mt-12 max-w-7xl;
   }
 
   label {
-    @apply md:grid md:grid-cols-2 md:gap-8;
+    @apply md:gap-8 md:grid md:grid-cols-2;
     grid-template-columns: 150px auto;
   }
 
   span {
-    @apply flex items-center mb-2 md:m-0 text-2xl md:text-3xl;
+    @apply flex items-center md:m-0 mb-2 text-2xl md:text-3xl;
   }
 
   input,
   textarea {
-    @apply border border-dotted border-blue-300 rounded-md p-4 w-full;
+    @apply p-4 border border-blue-300 rounded-md w-full;
   }
 
   textarea {
@@ -382,10 +379,10 @@ section[id="contact"] {
 
   button[type="submit"] {
     font-family: "Eksell Display";
-    @apply w-full py-6 tracking-wide flex justify-center rounded-md border border-orange-500 text-orange-500 transition-all;
+    @apply flex justify-center py-6 border border-orange-500 rounded-md w-full text-orange-500 tracking-wide transition-all;
 
     &:hover {
-      @apply bg-orange-500 cursor-pointer text-white;
+      @apply bg-orange-500 text-white cursor-pointer;
 
       svg {
         @apply fill-white;
@@ -397,13 +394,13 @@ section[id="contact"] {
     }
 
     svg {
-      @apply ml-3 mt-1 text-4xl fill-orange-500;
+      @apply fill-orange-500 mt-1 ml-3 text-4xl;
     }
   }
 }
 
 footer {
-  @apply mt-12 mb-36 py-4 text-2xl px-6 md:text-center;
+  @apply mt-12 mb-36 px-6 py-4 text-2xl md:text-center;
   font-family: "Louize Display";
   background: #000;
 
@@ -425,7 +422,7 @@ footer {
   }
 
   &::before {
-    @apply bg-current block mx-auto mb-12;
+    @apply block bg-current mx-auto mb-12;
     color: red;
     width: 12rem;
     height: 12rem;
@@ -438,14 +435,14 @@ footer {
 }
 
 back-to-top {
-  @apply fixed bottom-4 right-4 opacity-0 pointer-events-none transition-opacity duration-300;
+  @apply right-4 bottom-4 fixed opacity-0 transition-opacity duration-300 pointer-events-none;
 
   &.visible {
     @apply opacity-100 pointer-events-auto;
   }
 
   a {
-    @apply block rounded-full transition-all p-1;
+    @apply block p-1 rounded-full transition-all;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
