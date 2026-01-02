@@ -98,7 +98,7 @@
 /* Previous and Next Buttons */
 carousel-prev,
 carousel-next {
-  @apply block w-6 h-6 md:w-8 md:h-8 transition-all opacity-15;
+  @apply hidden md:block w-6 h-6 md:w-8 md:h-8 transition-all opacity-15;
   background: white;
 
   content: "\0a0";
@@ -125,7 +125,7 @@ carousel-dots {
   @apply block text-center w-full mt-4 mb-0 leading-0;
 
   ul {
-    @apply inline-flex flex-wrap gap-x-4 justify-evenly w-fit mx-auto;
+    @apply inline-flex flex-wrap gap-x-2 md:gap-x-4 justify-evenly w-fit mx-auto;
 
     li {
       @apply my-1;

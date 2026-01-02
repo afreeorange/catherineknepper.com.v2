@@ -40,15 +40,31 @@ const CLIENTS = [
 
 export const Clients = () => (
   <section id="clients">
-    <h2>Selected Clients</h2>
+    <section-header>
+      <carousel-prev />
+      <h2>Selected Clients</h2>
+      <carousel-next />
+    </section-header>
+    <carousel-dots />
     <section-wrapper>
-      <ul>
-        {CLIENTS.map((_) => (
-          <li>
-            <span dangerouslySetInnerHTML={{ __html: _ }} />
-          </li>
-        ))}
-      </ul>
+      {(() => {
+        const slice = Math.ceil(CLIENTS.length / 3);
+        const cols = [
+          CLIENTS.slice(0, slice),
+          CLIENTS.slice(slice, slice * 2),
+          CLIENTS.slice(slice * 2),
+        ];
+
+        return cols.map((col, i) => (
+          <ul key={i}>
+            {col.map((c) => (
+              <li key={c}>
+                <span dangerouslySetInnerHTML={{ __html: c }} />
+              </li>
+            ))}
+          </ul>
+        ));
+      })()}
     </section-wrapper>
   </section>
 );
