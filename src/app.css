@@ -229,11 +229,11 @@ section[id="books"] {
     ul {
       @apply grid overflow-x-scroll gap-x-6 items-end pb-4 mx-auto;
       grid-auto-flow: column;
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
 
       &::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
+        display: none;
       }
 
       li {
@@ -264,7 +264,7 @@ section[id="books"] {
   /* Publishers */
   publishers-wrapper {
     ul {
-      @apply flex gap-x-8 mt-12 mb-4;
+      @apply flex gap-x-12 mt-12 mb-4;
       width: max-content;
       animation: logo-scroll 50s linear infinite;
 
@@ -272,7 +272,7 @@ section[id="books"] {
         @apply hover:cursor-pointer;
 
         img {
-          @apply h-20 md:h-24 opacity-50 invert;
+          @apply h-20 md:h-24 opacity-75 invert;
         }
       }
 

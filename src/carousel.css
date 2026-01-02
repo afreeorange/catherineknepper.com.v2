@@ -130,7 +130,7 @@ carousel-dots {
     li {
       @apply my-1;
       button {
-        @apply rounded-full block bg-white w-2 h-2 md:w-3 md:h-3 cursor-pointer;
+        @apply rounded-full block bg-orange-400 w-2 h-2 md:w-3 md:h-3 cursor-pointer;
         font-size: 0;
       }
     }
