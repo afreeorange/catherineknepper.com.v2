@@ -194,11 +194,14 @@ const PUBLISHERS = [
 export const Books = () => {
   return (
     <section id="books">
-      <h2>
-        Featured Books <em>&amp;</em> Publishers
-      </h2>
+      <section-header>
+        <h2>
+          Featured Books <em>&amp;</em> Publishers
+        </h2>
+      </section-header>
 
       <h3>Books</h3>
+
       <books-wrapper>
         <ul>
           {BOOKS.map((_) => (

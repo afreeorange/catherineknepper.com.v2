@@ -210,7 +210,7 @@ section[id="more-about-me"] {
 }
 
 section[id="books"] {
-  @apply overflow-hidden bg-indigo-900 px-0;
+  @apply overflow-hidden bg-indigo-900;
   /* @apply border-t border-t-amber-600; */
 
   h2 {
@@ -223,24 +223,48 @@ section[id="books"] {
 
   /* Books */
   books-wrapper {
+    /* @apply max-w-7xl; */
+    @apply block relative;
+
     ul {
-      @apply grid overflow-x-scroll gap-x-8 items-end pb-4;
+      @apply grid overflow-x-scroll gap-x-6 items-end pb-4 mx-auto;
       grid-auto-flow: column;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+      }
 
       li {
-        @apply min-w-48;
+        @apply min-w-36 md:min-w-48 h-auto;
       }
     }
 
     li span {
       @apply hidden;
     }
+
+    books-wrapper-scroll {
+      @apply block relative h-2 mt-4 mx-auto rounded-full w-75 cursor-pointer;
+      background: rgba(255, 255, 255, 0.2);
+
+      div {
+        @apply absolute top-0 h-full rounded-full transition-all bg-orange-500;
+        transition: width 0.1s, left 0.1s;
+      }
+
+      &:hover div,
+      &.dragging div {
+        background: var(--color-orange-400);
+      }
+    }
   }
 
   /* Publishers */
   publishers-wrapper {
     ul {
-      @apply flex gap-x-12 mt-12 mb-4;
+      @apply flex gap-x-8 mt-12 mb-4;
       width: max-content;
       animation: logo-scroll 50s linear infinite;
 
@@ -248,7 +272,7 @@ section[id="books"] {
         @apply hover:cursor-pointer;
 
         img {
-          @apply h-32 opacity-50 invert;
+          @apply h-20 md:h-24 opacity-50 invert;
         }
       }
 
@@ -264,9 +288,9 @@ section[id="books"] {
     }
 
     /* Pause on hover */
-    ul:hover {
+    /* ul:hover {
       animation-play-state: paused;
-    }
+    } */
   }
 }
 

@@ -5,7 +5,9 @@ export const Testimonials = () => (
       <h2>Testimonials</h2>
       <carousel-next />
     </section-header>
+
     <carousel-dots />
+
     <section-wrapper>
       <figure>
         <blockquote>

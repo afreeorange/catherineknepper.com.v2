@@ -67,7 +67,7 @@ export const App = () => {
           ))}
         </ul>
       </div> */}
-        <Hello />
+        {/* <Hello /> */}
       </above-fold>
 
       <main>
