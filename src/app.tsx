@@ -64,6 +64,17 @@ export const App = () => {
       </main>
 
       <footer>
+        <a
+          href="https://labyrinthsociety.org/historical-overview/"
+          title={"About this Labyrinth"}
+        >
+          <span>
+            <img
+              src="/assets/img/catherine/labyrinth.png"
+              alt="A Christian Labyrinth"
+            />
+          </span>
+        </a>
         &copy; {new Date().getFullYear()},{" "}
         <strong>Catherine Knepper Writing Services, LLC</strong>. Photo by{" "}
         <a href="https://kathryngamble.com/">Kathryn Gamble</a>. <br />I respect
