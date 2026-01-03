@@ -456,7 +456,7 @@ footer {
     }
 
     &::before {
-      @apply block bg-current mx-auto mb-12 w-48 h-48 text-amber-500;
+      @apply block bg-current mx-auto mb-12 w-48 h-48 text-orange-500;
       content: "\0a0";
       mask-image: url(/assets/img/catherine/labyrinth.png);
       mask-position: center;
