@@ -5,30 +5,20 @@
 ### TODO
 
 - [x] Favicon
-- [ ] OpenGraph
+- [x] OpenGraph
 - [x] Build
 - [ ] Correct quotes... typography!
 - [x] robots.txt
 - [x] humans.txt
-- [ ] Discretionary Ligatures! E.g. "Muriel"
+- [x] Discretionary Ligatures! E.g. "Muriel"
 - [x] Back to top ^^^
 - [x] Responsive :/
-- [ ] Billy
-- [ ] Muriel
-- [ ] Jeff
-- [ ] Zorana
 - [ ] BookShop.org links
-- [ ] Carousel for Logos
-- [ ] Finaly Copy review
+- [-] Carousel for Logos
+- [ ] Final Copy review
 - [ ] Colors
 - [x] Mark color
-- [ ] Arrows opacity
-
-## Friends
-
-- https://sarastibitz.com/
-- https://www.hilaryliftin.com/
-- https://www.murielwilkins.com/
+- [x] Arrows opacity
 
 ---
 
@@ -51,27 +41,28 @@ Add:
 ## Publishers
 
 - [ ] Berkley Books
-- [ ] Bloomsbury
+- [x] Bloomsbury
 - [ ] Broadway
-- [ ] Countryman Press
-- [ ] Crown
+- [x] Countryman Press
+- [x] Crown
 - [ ] Fast Company
-- [ ] Hachette
-- [ ] HarperCollins
+- [x] Hachette
+- [x] HarperCollins
 - [x] Harvard Business Review
 - [ ] Hyperion
 - [ ] Lake Union
-- [ ] O’Reilly Media
-- [ ] Oxford University Press
-- [ ] Penguin Random House
+- [x] O’Reilly Media
+- [x] Oxford University Press
+- [X] Penguin Random House
+- [X] Post Hill Press
 - [ ] Permanent Press
 - [ ] PublicAffairs
-- [ ] Rodale
+- [x] Rodale
 - [ ] Sarabande Books
-- [ ] Schiffer
-- [ ] Seal Press
+- [x] Schiffer
+- [x] Seal Press
 - [ ] Simon & Schuster
 - [ ] Skyhorse Publishing
-- [ ] Sourcebooks
+- [x] Sourcebooks
 - [x] Spiegel & Grau
 - [x] St. Martin’s Press

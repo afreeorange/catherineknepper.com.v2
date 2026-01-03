@@ -124,6 +124,7 @@ p {
 
 section {
   @apply px-4 md:px-6 py-8;
+  font-variant-ligatures: discretionary-ligatures;
   scrollbar-color: var(--color-orange-500) #080f4f;
 
   a {

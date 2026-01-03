@@ -1,6 +1,6 @@
 import type { ComponentChildren } from "preact";
 
-const TITLE = "Catherine Knepper &mdash; Writer and Editor";
+const TITLE = "Catherine Knepper &mdash; Writer &amp; Editor";
 const DESCRIPTION =
   "I help smart, talented people bring their ideas to the page and to the marketplace.";
 
@@ -13,9 +13,9 @@ export const Shell = ({ children }: { children?: ComponentChildren }) => (
 
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content="/catherine-small.jpg" />
+      <meta property="og:image" content="/assets/img/og-image.webp" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="http://catherineknepper.com/" />
+      <meta property="og:url" content="https://catherineknepper.com/" />
 
       <title dangerouslySetInnerHTML={{ __html: TITLE }} />
 

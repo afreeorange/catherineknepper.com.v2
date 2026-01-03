@@ -65,9 +65,9 @@ export const App = () => {
 
       <footer>
         &copy; {new Date().getFullYear()},{" "}
-        <strong>Catherine Knepper Writing Services, LLC</strong>. Photo by my
-        friend <a href="https://kathryngamble.com/">Kathryn Gamble</a>. <br />I
-        respect your privacy and use{" "}
+        <strong>Catherine Knepper Writing Services, LLC</strong>. Photo by{" "}
+        <a href="https://kathryngamble.com/">Kathryn Gamble</a>. <br />I respect
+        your privacy and use{" "}
         <a
           href="https://plausible.io"
           title={"Plausible, a privacy-friendly web analytics solution."}
