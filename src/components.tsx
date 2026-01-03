@@ -11,6 +11,7 @@ export const Shell = ({ children }: { children?: ComponentChildren }) => (
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta name="view-transition" content="same-origin" />
       <meta name="description" content={DESCRIPTION}></meta>
+      <meta name="google-site-verification" content="2P-MeuqeY5XiKr7825ffnigZ7eTm3y0glBu6UzFj9eE" />
 
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />

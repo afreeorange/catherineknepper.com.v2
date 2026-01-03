@@ -7,7 +7,7 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsx .scripts/build.tsx",
-    "deploy": "pnpm build && aws s3 sync ./dist/ s3://docker.nikhil.io/",
+    "deploy": "pnpm build && aws s3 sync ./dist/ s3://catherineknepper.com/",
     "preview": "vite preview"
   },
   "dependencies": {
