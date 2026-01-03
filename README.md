@@ -2,6 +2,20 @@
 
 ## Development
 
+```bash
+# Install dependencies
+pnpm i
+
+# Start development server
+pnpm dev
+
+# Build
+pnpm build
+
+# Build and Deploy
+pnpm run deploy
+```
+
 ### TODO
 
 - [x] Favicon
@@ -19,50 +33,4 @@
 - [ ] Colors
 - [x] Mark color
 - [x] Arrows opacity
-
----
-
-## Services
-
-- [x] Nix Line Editing
-- [x] Nix Developmental Editing
-
-## Books
-
-Add:
-
-- [x] The Grammar of God
-- [x] The Book of Judges
-- [x] Creativity Choice (best cover)
-- [x] Burnout Immunity
-- [x] Unblocked (Muriel)
-- [x] Every Day Sucks (Billy)
-
-## Publishers
-
-- [ ] Berkley Books
-- [x] Bloomsbury
-- [ ] Broadway
-- [x] Countryman Press
-- [x] Crown
-- [ ] Fast Company
-- [x] Hachette
-- [x] HarperCollins
-- [x] Harvard Business Review
-- [ ] Hyperion
-- [ ] Lake Union
-- [x] O’Reilly Media
-- [x] Oxford University Press
-- [X] Penguin Random House
-- [X] Post Hill Press
-- [ ] Permanent Press
-- [ ] PublicAffairs
-- [x] Rodale
-- [ ] Sarabande Books
-- [x] Schiffer
-- [x] Seal Press
-- [ ] Simon & Schuster
-- [ ] Skyhorse Publishing
-- [x] Sourcebooks
-- [x] Spiegel & Grau
-- [x] St. Martin’s Press
+- [ ] Performance Tuning/Optimization
