@@ -21,13 +21,13 @@ export const Shell = ({ children }: { children?: ComponentChildren }) => (
 
       <link
         rel="apple-touch-icon"
-        type="image/svg+xml"
-        href="/assets/img/favicon/favicon.svg"
+        type="image/png"
+        href="/assets/img/favicon/favicon.png"
       />
       <link
         rel="icon"
-        type="image/svg+xml"
-        href="/assets/img/favicon/favicon.svg"
+        type="image/png"
+        href="/assets/img/favicon/favicon.png"
       />
       <link rel="stylesheet" href="/index.css" />
 
