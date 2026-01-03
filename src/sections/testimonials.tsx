@@ -1,12 +1,16 @@
 export const Testimonials = () => (
-  <section id="testimonials">
+  <section id="testimonials" aria-labelledby="testimonials-heading">
     <section-header>
-      <carousel-prev />
-      <h2>Testimonials</h2>
-      <carousel-next />
+      <carousel-prev
+        aria-label="Previous Testimonial"
+        role="button"
+        tabIndex={0}
+      />
+      <h2 id="testimonials-heading">Testimonials</h2>
+      <carousel-next aria-label="Next Testimonial" role="button" tabIndex={0} />
     </section-header>
 
-    <carousel-dots />
+    <carousel-dots aria-label="Testimonial navigation" role="tablist" />
 
     <section-wrapper>
       <figure>
@@ -41,46 +45,19 @@ export const Testimonials = () => (
           >
             <em>All the Light We Cannot See</em>
           </a>
-          , and{" "}
-          <a
-            href="https://www.anthonydoerr.com/books/about-grace/"
-            title="About Grace"
-          >
-            <em>About Grace</em>
-          </a>
-          ; the story collections{" "}
-          <a
-            href="https://www.anthonydoerr.com/books/the-shell-collector/"
-            title="The Shell Collector"
-          >
-            <em>The Shell Collector</em>
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://www.anthonydoerr.com/books/memory-wall/"
-            title="Memory Wall"
-          >
-            <em>Memory Wall</em>
-          </a>
-          ; and the memoir{" "}
-          <a
-            href="https://www.anthonydoerr.com/books/four-seasons-in-rome/"
-            title="Four Seasons in Rome"
-          >
-            <em>Four Seasons in Rome</em>
-          </a>
+          .
         </figcaption>
       </figure>
 
       <figure>
         <blockquote>
           There are editors, and there are editors. And then – I kid you not –
-          there are EDITORS. I've worked with a lot of editors. All kinds. Heck,
-          I'm an editor. Catherine Knepper is damn near peerless. Fiction or
-          nonfiction; it matters not. She's the kind of editor that editors want
-          to work on their prose. It won't be easy to get on her schedule but if
-          you get the chance, grab it with both hands and hold on for a wild
-          ride.
+          there are <em>editors</em>. I've worked with a lot of editors. All
+          kinds. Heck, I'm an editor. Catherine Knepper is damn near peerless.
+          Fiction or nonfiction; it matters not. She's the kind of editor that
+          editors want to work on their prose. It won't be easy to get on her
+          schedule but if you get the chance, grab it with both hands and hold
+          on for a wild ride.
         </blockquote>
         <figcaption>
           <a href="https://www.wesleywildman.com/" title="Wesley Wildman">
@@ -145,33 +122,24 @@ export const Testimonials = () => (
 
       <figure>
         <blockquote>
-          It's with full confidence and inspiration that I recommend Catherine
-          Knepper. As a second-time author working with Harvard Business Review
-          Press, I knew I needed someone who could deliver a high-quality, no
-          nonsense, practical manuscript for a business audience and be able to
-          do that in a way which also captured my natural style, authenticity,
-          and voice as an executive coach. From the outset, I noticed
-          Catherine's rigor in how she approached really understanding the
-          publisher I was working with and the reader I was writing for. Her
-          level of commitment only continued as we spent months working together
-          to transform outlines, drafts, research, and interviews into a fully
-          realized manuscript. Catherine is a gifted writer and fully brought to
-          life my voice and message. In every page, you see where she has
-          enhanced my thinking, considered the reader's point of view, or has
-          integrated important research by selecting the right information,
-          paraphrasing exactly what is needed, and footnoting all with
-          precision. On top of producing an outstanding, quality end product,
+          As a second-time author working with Harvard Business Review Press, I
+          knew I needed someone who could deliver a high-quality, no nonsense,
+          practical manuscript for a business audience and be able to do that in
+          a way which also captured my natural style, authenticity, and voice as
+          an executive coach. From the outset, I noticed Catherine’s rigor in
+          how she approached really understanding the publisher I was working
+          with and the reader I was writing for. Her level of commitment only
+          continued as we spent months working together to transform outlines,
+          drafts, research, and interviews into a fully realized manuscript.
+          Catherine is a gifted writer and fully brought to life my voice and
+          message. On top of producing an outstanding, quality end product,
           Catherine is an absolute joy to work with! She is authentic, positive,
           and encouraging all along the way, which offers an author a sense of
           important ease during a process which can bring high stress and tight
-          deadlines. As I look back on my work with Catherine I'll forever be
-          grateful for her being there every step of the way-not only in my
-          being able to turn in my manuscript to Harvard Business Press ahead of
-          schedule but also for making it a fun and wonderful experience
-          overall!
+          deadlines.
         </blockquote>
         <figcaption>
-          <strong>Amy Jen Su</strong>, Managing Partner &amp; Co-Founder of{" "}
+          <strong>Amy Jen Su</strong>, Co-Founder of{" "}
           <a href="http://paravispartners.com/" title="Paravis Partners">
             Paravis Partners
           </a>{" "}
@@ -286,15 +254,9 @@ export const Testimonials = () => (
               Against the Wind
             </a>
           </em>
-          . I was looking for someone to understand me and the age that I grew
-          up in, the 60's and 70's. I assumed it was going to be a male Boomer
-          who'd lived through those days. It wasn't as I thought-I found a real
-          treasure of talent and understanding in Catherine. Catherine was
-          intrigued by my story of redemption and said she would give it a try
-          for a chapter or two. We worked through those first chapters and from
-          there we both became a part of this great book. Thank you, Catherine,
-          as you have touched my soul and so many readers who have read our
-          book!
+          . I found a real treasure of talent and understanding in Catherine.
+          Thank you, Catherine, as you have touched my soul and so many readers
+          who have read our book!
         </blockquote>
         <figcaption>
           <a href="http://www.kirkvanheeauthor.com/#/" title="Kirk VanHee">
@@ -355,10 +317,19 @@ export const Testimonials = () => (
 
       <figure>
         <blockquote>
-          Many important eyes have looked at [_Fear and Faith in Paradise:
+          Many important eyes have looked at{" "}
+          <em>
+            <a
+              href="http://www.amazon.com/Fear-Faith-Paradise-Exploring-Conflict/dp/1442214775"
+              title="Fear and Faith in Paradise:
           Exploring Conflict and Religion in the Middle
-          East_](http://www.amazon.com/Fear-Faith-Paradise-Exploring-Conflict/dp/1442214775),
-          but few as discerning and imaginative as Catherine Knepper. She has
+          East"
+            >
+              Fear and Faith in Paradise: Exploring Conflict and Religion in the
+              Middle East
+            </a>
+          </em>
+          , but few as discerning and imaginative as Catherine Knepper. She has
           played more than a few roles in the manuscript's development, from
           copy editor and sounding board to fact checker and midwife. Her faith
           in the manuscript was untiring.
@@ -436,14 +407,13 @@ export const Testimonials = () => (
 
       <figure>
         <blockquote>
-          When I began writing my book I had no idea how to go about getting
-          published. Then I heard about Catherine Knepper. Thanks to Catherine
-          my writing project became a professional book proposal. Her critique
-          of my manuscript was invaluable in adding dramatic impact and movement
-          to the narrative. The proposal drew the attention of every agent to
-          whom it was submitted, and in the end was accepted by a top literary
-          agent who offered representation less than three hours after receiving
-          the proposal.
+          When I began writing my book I wanted to reach out to people who might
+          also want to restore the natural quality of their land. But I had no
+          idea how to go about getting published. Thanks to Catherine my writing
+          project became a professional book proposal. The proposal drew the
+          attention of every agent to whom it was submitted, and in the end was
+          accepted by a top literary agent who offered representation less than
+          three hours after receiving it.
         </blockquote>
         <figcaption>
           <strong>Sibylla Brown</strong>, author of{" "}
@@ -469,7 +439,7 @@ export const Testimonials = () => (
           ghostwriter look no further, Catherine is the best of the best.
         </blockquote>
         <figcaption>
-          <strong>Allen &amp; Andrea Beach</strong>, founders of{" "}
+          <strong>Allen <em>&amp;</em> Andrea Beach</strong>, founders of{" "}
           <a href="http://www.argusx.com/" title="Argus Connection, Inc.">
             Argus Connection, Inc.
           </a>{" "}

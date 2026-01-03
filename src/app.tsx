@@ -39,10 +39,10 @@ export const App = () => {
               Catherine Knepper
             </a>
           </h1>
-          <nav>
-            <ul>
+          <nav aria-label="Main navigation">
+            <ul role="list">
               {NAVIGATION.map((_) => (
-                <li>
+                <li key={_.link}>
                   <a href={_.link} title={_.title}>
                     {_.label}
                   </a>
@@ -54,7 +54,7 @@ export const App = () => {
         <Hello />
       </above-fold>
 
-      <main>
+      <main id="main-content">
         <Books />
         <MoreAboutMe />
         <Clients />
@@ -70,7 +70,7 @@ export const App = () => {
         respect your privacy and use{" "}
         <a
           href="https://plausible.io"
-          title={"I use Plausible, a privacy-friendly web analytics solution."}
+          title={"Plausible, a privacy-friendly web analytics solution."}
         >
           Plausible
         </a>{" "}
@@ -78,15 +78,15 @@ export const App = () => {
       </footer>
 
       <back-to-top>
-        <a href="#">
+        <a href="#top" aria-label="Back to top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="2rem"
-            height="2rem"
-            fill="#111111"
+            width="32"
+            height="32"
+            fill="#111"
             viewBox="0 0 256 256"
           >
-            <path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path>
+            <path d="M208.49,120.49a12,12,0,0,1-17,0L140,69V216a12,12,0,0,1-24,0V69L64.49,120.49a12,12,0,0,1-17-17l72-72a12,12,0,0,1,17,0l72,72A12,12,0,0,1,208.49,120.49Z"></path>
           </svg>
         </a>
       </back-to-top>

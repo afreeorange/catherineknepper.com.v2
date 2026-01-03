@@ -1,16 +1,12 @@
 $(document).ready(function () {
-  // https://github.com/kenwheeler/slick/?tab=readme-ov-file#settings
-
   const tailwind_md_breakpoint = 768;
 
-  $("#clients section-wrapper").on(
-    "breakpoint",
-    function (event, slick, breakpoint) {
-      console.log(">>>", breakpoint);
-      // left
-    }
-  );
+  /**
+   * ========== Slider/Carousel Config ==========
+   */
 
+  // https://github.com/kenwheeler/slick/?tab=readme-ov-file#settings
+  /** TODO: See console. Fix later. */
   $(window).resize(function () {
     if ($(window).width() <= tailwind_md_breakpoint) {
       $("#clients section-wrapper").slick({
@@ -34,6 +30,22 @@ $(document).ready(function () {
       $("#clients section-wrapper").slick("unslick");
     }
   });
+
+  /** TODO: Later... maybe... */
+  // $("publishers-wrapper ul").slick({
+  //   adaptiveHeight: true,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 0,
+  //   buttons: false,
+  //   cssEase: "linear",
+  //   infinite: true,
+  //   pauseOnFocus: true,
+  //   pauseOnHover: true,
+  //   slidesToScroll: 1,
+  //   slidesToShow: 5,
+  //   speed: 5000,
+  // });
 
   $("#testimonials section-wrapper").slick({
     arrows: true,
@@ -64,12 +76,13 @@ $(document).ready(function () {
     ],
   });
 
-  // Synthetic scrollbar for books-wrapper
+  /**
+   * ========== 'Synthetic' scrollbar for Mobile ==========
+   */
   const booksWrapper = $("books-wrapper");
   const booksUl = booksWrapper.find("ul");
 
   if (booksWrapper.length && booksUl.length) {
-    // Create scrollbar element
     const scrollbar = $(
       "<books-wrapper-scroll><div></div></books-wrapper-scroll>"
     );
@@ -130,7 +143,9 @@ $(document).ready(function () {
     });
   }
 
-  // Back-to-top visibility based on <nav> element
+  /**
+   * ========== Back-to-top visibility based on <nav> element ==========
+   */
   const navigationElement = $("header nav")[0];
   const backToTop = $("back-to-top");
 

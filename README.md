@@ -1,20 +1,30 @@
-# Catherine Knepper Writing Services, LLC.
+# CatherineKnepper.com
 
 ## Development
 
 ### TODO
 
-- [ ] Favicon
+- [x] Favicon
 - [ ] OpenGraph
 - [x] Build
 - [ ] Correct quotes... typography!
 - [x] robots.txt
 - [x] humans.txt
 - [ ] Discretionary Ligatures! E.g. "Muriel"
-- [ ] Back to top ^^^
-- [ ] Responsive :/
+- [x] Back to top ^^^
+- [x] Responsive :/
+- [ ] Billy
+- [ ] Muriel
+- [ ] Jeff
+- [ ] Zorana
+- [ ] BookShop.org links
+- [ ] Carousel for Logos
+- [ ] Finaly Copy review
+- [ ] Colors
+- [x] Mark color
+- [ ] Arrows opacity
 
-## References
+## Friends
 
 - https://sarastibitz.com/
 - https://www.hilaryliftin.com/
@@ -24,19 +34,19 @@
 
 ## Services
 
-- [ ] Nix Line Editing
-- [ ] Nix Developmental Editing
+- [x] Nix Line Editing
+- [x] Nix Developmental Editing
 
 ## Books
 
 Add:
 
-- [ ] The Grammar of God
-- [ ] The Book of Judges
-- [ ] Creativity Choice (best cover)
-- [ ] Burnout Immunity
-- [ ] Unblocked (Muriel)
-- [ ] Every Day Sucks (Billy)
+- [x] The Grammar of God
+- [x] The Book of Judges
+- [x] Creativity Choice (best cover)
+- [x] Burnout Immunity
+- [x] Unblocked (Muriel)
+- [x] Every Day Sucks (Billy)
 
 ## Publishers
 

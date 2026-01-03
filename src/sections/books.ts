@@ -1,0 +1,230 @@
+export default [
+  {
+    title:
+      "Leadership Unblocked: Break Through the Beliefs That Limit Your Potential",
+    author: "Muriel M. Wilkins",
+    cover: "/assets/img/books/leadership-unblocked.jpeg",
+    uri: "https://www.amazon.com/Leadership-Unblocked-Through-Beliefs-Potential/dp/1647827264",
+  },
+  {
+    title: "Cloud Cuckoo Land",
+    author: "Anthony Doerr",
+    cover: "/assets/img/books/cloud.jpeg",
+    uri: "https://bookshop.org/p/books/cloud-cuckoo-land-anthony-doerr/16076948",
+  },
+  {
+    title: "Burnout Immunity",
+    author: "Kandi Wiens",
+    cover: "/assets/img/books/burnout.jpeg",
+    uri: "https://bookshop.org/p/books/burnout-immunity-how-emotional-intelligence-can-help-you-build-resilience-and-heal-your-relationship-with-work-kandi-wiens/20231808",
+  },
+  {
+    title: "The Anxious Achiever",
+    author: "Morra Aarons-Mele",
+    cover: "/assets/img/books/anxious.jpeg",
+    uri: "https://bookshop.org/p/books/the-anxious-achiever-turn-your-biggest-fears-into-your-leadership-superpower-morra-aarons-mele/18579959",
+  },
+  {
+    title:
+      "The Creativity Choice: The Science of Making Decisions to Turn Ideas into Action",
+    author: "Zorana Ivcevic Pringle",
+    cover: "/assets/img/books/creativity-choice.jpeg",
+    uri: "https://www.amazon.com/Creativity-Choice-Science-Making-Decisions/dp/1541704320",
+  },
+  {
+    title: "Under This Beautiful Dome",
+    author: "Terry Mutchler",
+    cover: "/assets/img/books/dome.jpeg",
+    uri: "https://bookshop.org/books/under-this-beautiful-dome-a-senator-a-journalist-and-the-politics-of-gay-love-in-america/9781580056090",
+  },
+  {
+    title: "The Grammar of God",
+    author: "Aviya Kushner",
+    cover: "/assets/img/books/grammar.jpeg",
+    uri: "https://www.amazon.com/Grammar-God-Journey-Words-Worlds/dp/0385520824",
+  },
+  {
+    title: "Design with Love: At Home in America",
+    author: "Katie Swenson",
+    cover: "/assets/img/books/design.jpeg",
+    uri: "https://bookshop.org/p/books/design-with-love-at-home-in-america-katie-swenson/18668894",
+  },
+  {
+    title: "The Paris Architect",
+    author: "Charles Belfoure",
+    cover: "/assets/img/books/paris.jpeg",
+    uri: "https://bookshop.org/books/the-paris-architect/9781402294150",
+  },
+  {
+    title: "I'm Not Really a Waitress",
+    author: "Suzi Weiss-Fischmann",
+    cover: "/assets/img/books/waitress.jpeg",
+    uri: "https://www.amazon.com/Not-Really-Waitress-Building-Business/dp/1538701731",
+  },
+  {
+    title: "The Book of Judges: Perspectives from the Bench",
+    author: "Jeffrey L. Goodman",
+    cover: "/assets/img/books/judges.jpeg",
+    uri: "https://www.amazon.com/Book-Judges-Perspectives-Bench/dp/B0FDH5BRDS",
+  },
+  {
+    title: "The Blue Box: Three Lives in Letters",
+    author: "Sallie Bingham",
+    cover: "/assets/img/books/bluebox.jpeg",
+    uri: "https://bookshop.org/books/the-blue-box-three-lives-in-letters/9781936747788",
+  },
+
+  {
+    title: "Consumption",
+    author: "G S Johnston",
+    cover: "/assets/img/books/consumption.jpeg",
+    uri: "https://www.amazon.com/Consumption-Novel-G-S-Johnston-ebook/dp/B0052YX8K8",
+  },
+  {
+    title: "The Countess",
+    author: "Rebecca Johns",
+    cover: "/assets/img/books/countess.jpeg",
+    uri: "https://bookshop.org/books/the-countess-a-novel-of-elizabeth-bathory/9780307588463",
+  },
+  {
+    title: "The End of Fun",
+    author: "Sean McGinty",
+    cover: "/assets/img/books/fun.jpeg",
+    uri: "https://www.amazon.com/End-Fun-Novel-Sean-McGinty/dp/1936787377",
+  },
+
+  {
+    title: "Death in a Wine Dark Sea",
+    author: "Lisa King",
+    cover: "/assets/img/books/death.jpeg",
+    uri: "https://www.amazon.com/Death-Wine-Dark-Lisa-King/dp/1579622828",
+  },
+  {
+    title: "The Superhuman Mind",
+    author: "Berit Brogaard and Kristian Marlow",
+    cover: "/assets/img/books/superhuman.jpeg",
+    uri: "https://www.amazon.com/Superhuman-Mind-Free-Genius-Brain/dp/1594633681",
+  },
+
+  {
+    title: "What You Don't Know",
+    author: "Cortnie Abercrombie",
+    cover: "/assets/img/books/dontknow.jpeg",
+    uri: "https://www.amazon.com/What-You-Dont-Know-Influence/dp/1637582080",
+  },
+  {
+    title: "Eat for Extraordinary Health & Healing",
+    author: "The Editors of Rodale Books",
+    cover: "/assets/img/books/eat.jpeg",
+    uri: "https://www.amazon.com/Eat-Extraordinary-Health-Healing-Disease-Fighting/dp/1623367190",
+  },
+  {
+    title: "Fear and Faith in Paradise",
+    author: "Phil Karber",
+    cover: "/assets/img/books/fearfaith.jpeg",
+    uri: "https://www.amazon.com/Fear-Faith-Paradise-Exploring-Conflict/dp/1538102099",
+  },
+  {
+    title: "Heal Your Heart",
+    author: "Michael Miller, MD with Catherine Knepper",
+    cover: "/assets/img/books/heal.jpeg",
+    uri: "https://www.amazon.com/Heal-Your-Heart-Positive-Emotions/dp/1623364396",
+  },
+  {
+    title: "Lady Leader",
+    author: "Mary Stier",
+    cover: "/assets/img/books/leader.jpeg",
+    uri: "https://www.amazon.com/Lady-Leader-Finding-Your-Place/dp/1937355810",
+  },
+  {
+    title: "Life on Mars",
+    author: "Lori McNulty",
+    cover: "/assets/img/books/mars.jpeg",
+    uri: "https://www.amazon.com/Life-Mars-Lori-Mcnulty/dp/0864928882",
+  },
+  {
+    title: "The Memory of Us",
+    author: "Camille Di Maio",
+    cover: "/assets/img/books/memory.jpeg",
+    uri: "https://bookshop.org/p/books/the-memory-of-us-camille-di-maio/11865760",
+  },
+  {
+    title: "The Miscarriage Map",
+    author: "Dr. Sunita Osborn",
+    cover: "/assets/img/books/miscarriage.jpeg",
+    uri: "https://bookshop.org/p/books/the-miscarriage-map-an-honest-guide-to-navigating-pregnancy-loss-working-through-the-pain-and-moving-forward-sunita-osborn/18752824",
+  },
+  {
+    title: "The Real Life of the Parthenon",
+    author: "Patricia Vigderman",
+    cover: "/assets/img/books/parthenon.jpeg",
+    uri: "https://www.amazon.com/Real-Life-Parthenon-Patricia-Vigderman/dp/0226855945",
+  },
+  // {
+  //   title: "Queenbreaker",
+  //   author: "Catherine McCarran",
+  //   cover: "/assets/img/books/queenbreaker.jpeg",
+  //   uri: "https://www.amazon.com/Queenbreaker-Perseverance-Trilogy-Catherine-McCarran/dp/099726411X",
+  // },
+  {
+    title: "Sky Train",
+    author: "Canyon Sam",
+    cover: "/assets/img/books/skytrain.jpeg",
+    uri: "https://www.amazon.com/Sky-Train-Tibetan-Womens-Journey/dp/0295990775",
+  },
+  {
+    title: "Sleepwalker",
+    author: "Kathleen Frazier",
+    cover: "/assets/img/books/sleepwalker.jpeg",
+    uri: "https://bookshop.org/p/books/sleepwalker-the-mysterious-makings-and-recovery-of-a-somnambulist-kathleen-frazier/9190906",
+  },
+  {
+    title: "Stop Breathe Believe",
+    author: "Dianne Morris Jones with Catherine Knepper",
+    cover: "/assets/img/books/stop.jpeg",
+    uri: "https://www.amazon.com/Stop-Breathe-Believe-Mindfulness-Resilience/dp/1623365546",
+  },
+  {
+    title: "Timberhill: Chronicle of a Restoration",
+    author: "Sibylla Brown",
+    cover: "/assets/img/books/timberhill.jpeg",
+    uri: "https://www.amazon.com/Timberhill-Chronicle-Restoration-Sibylla-Brown/dp/0985728272",
+  },
+
+  {
+    title: "The Whole Body Cure",
+    author: "Dr. Corey W. Kirshner with Catherine Knepper",
+    cover: "/assets/img/books/wholebody.jpeg",
+    uri: "https://www.amazon.com/Whole-Body-Cure-Unlock-Bodys/dp/1623365414",
+  },
+  {
+    title: "Spirit Tech",
+    author: "Wesley J. Wildman and Kate J. Stockly",
+    cover: "/assets/img/books/spirit.jpeg",
+    uri: "https://bookshop.org/books/spirit-tech-the-brave-new-world-of-consciousness-hacking-and-enlightenment-engineering/9781250274939",
+  },
+  {
+    title: "Unblocked",
+    author: "Alison McCauley",
+    cover: "/assets/img/books/unblocked.jpeg",
+    uri: "https://www.amazon.com/Unblocked-Alison-McCauley/dp/1492090158",
+  },
+  {
+    title: "Do Your Best Coaching",
+    author: "Julie Hess and Laura Daley",
+    cover: "/assets/img/books/coaching.jpeg",
+    uri: "https://www.amazon.com/Your-Best-Coaching-Navigating-Engagement/dp/B09X2YRNLX",
+  },
+  {
+    title: "The Adversity Paradox",
+    author: "J. Barry Griswell and Bob Jennings",
+    cover: "/assets/img/books/adversity.jpeg",
+    uri: "https://bookshop.org/books/the-adversity-paradox-an-unconventional-guide-to-achieving-uncommon-business-success/9780312598792",
+  },
+  {
+    title: "More Than a Walk on the Beach",
+    author: "Mary E. Kramer",
+    cover: "/assets/img/books/beach.jpeg",
+    uri: "https://www.amazon.com/More-than-Walk-Beach-Confessions/dp/1888223936",
+  },
+];

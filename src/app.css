@@ -2,22 +2,25 @@
 @import "./fonts.css";
 @import "./carousel.css";
 
+:root {
+  --font-navigation: "Louize Display";
+  --font-body: "Louize";
+  --font-headings: "Eksell Display";
+}
+
 @keyframes logo-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* Moves exactly half the track width (the first set of 10) */
     transform: translateX(-50%);
   }
 }
 
 html,
 body {
-  @apply w-full scroll-smooth;
-  font-family: "Louize";
-  color: white;
-
+  @apply selection:bg-orange-600 w-full text-white selection:text-white scroll-smooth;
+  font-family: var(--font-body);
   background: radial-gradient(
     circle at center,
     #121113,
@@ -45,9 +48,8 @@ body {
 }
 
 header {
-  @apply z-10 lg:flex justify-between items-center gap-4 p-4 lg:p-6 w-full h-[95vh] lg:h-auto block bg-top-right lg:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover lg:bg-none;
-
-  font-family: "Louize Display";
+  font-family: var(--font-navigation);
+  @apply z-10 lg:flex justify-between items-center gap-4 p-4 lg:p-6 w-full h-screen lg:h-auto block bg-top-right lg:pb-0 bg-no-repeat bg-[url("/assets/img/catherine/about.webp")] bg-cover lg:bg-none;
 
   h1 {
     @apply font-bold text-5xl uppercase;
@@ -58,44 +60,37 @@ header {
 
     ul {
       @apply lg:inline-flex flex-wrap gap-x-12 text-4xl leading-13;
-
-      li {
-      }
     }
   }
 }
 
 h2 {
+  font-family: var(--font-headings);
   @apply mx-auto max-w-7xl text-orange-500 text-5xl lg:text-6xl text-center;
-  font-family: "Eksell Display";
 
   em {
     @apply font-extralight;
-    font-weight: 100;
-    font-family: "Louize";
+    font-family: var(--font-body);
   }
 }
 
 h3 {
+  font-family: var(--font-headings);
   @apply mx-auto max-w-7xl text-orange-400 text-4xl lg:text-center;
-  font-family: "Eksell Display";
 
   em {
     @apply font-extralight;
-    font-weight: 100;
-    font-family: "Louize";
+    font-family: var(--font-body);
   }
 }
 
 h4 {
   @apply text-amber-400 text-3xl lg:text-center;
-  font-family: "Eksell Display";
-  /* font-weight: normal; */
+  font-family: var(--font-headings);
 
   em {
     @apply font-extralight;
-    font-weight: 100;
-    font-family: "Louize";
+    font-family: var(--font-body);
   }
 }
 
@@ -107,11 +102,11 @@ p {
   @apply relative rounded-r-lg rounded-l-sm h-fit;
 
   img {
-    @apply block rounded-r-md rounded-l-sm;
-    box-shadow: 3px 3px 8px -2px #000;
+    @apply block shadow-black shadow-md rounded-r-md rounded-l-sm;
+    /* box-shadow: 3px 3px 8px -2px #000; */
   }
 
-  /* This adds the 'hardcover' effect */
+  /* 'Hardcover' effect */
   &::after {
     bottom: 0;
     box-shadow: 1px 0 3px rgba(255, 255, 255, 0.7);
@@ -123,13 +118,17 @@ p {
   }
 
   &:hover {
-    @apply saturate-200;
+    @apply saturate-200 cursor-pointer;
   }
 }
 
 section {
-  @apply px-4 py-8;
+  @apply px-4 md:px-6 py-8;
   scrollbar-color: var(--color-orange-500) #080f4f;
+
+  a {
+    @apply underline underline-offset-4;
+  }
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -150,13 +149,12 @@ section {
 above-fold {
   @apply block lg:bg-[url("/assets/img/catherine/about.webp")] bg-top-right bg-no-repeat bg-size-[auto_1550px];
 
-  big {
-    font-family: "Eksell Display";
-    @apply block backdrop-grayscale-50 mx-auto lg:mt-8 lg:py-0 max-w-7xl text-orange-500 text-4xl lg:text-5xl;
+  section[id="hello"] {
+    @apply bg-gray-900 lg:bg-transparent mx-auto py-2 pt-8 lg:pr-[550px] max-w-7xl;
   }
 
-  section[id="hello"] {
-    @apply bg-gray-900 lg:bg-transparent mx-auto py-2 pt-8 lg:pr-[500px] max-w-7xl;
+  h2 {
+    @apply block backdrop-grayscale-50 mx-auto lg:mt-8 lg:py-0 max-w-7xl text-orange-500 text-4xl lg:text-5xl text-left;
   }
 
   p:first-of-type {
@@ -165,14 +163,6 @@ above-fold {
 
   p:not(:first-of-type) {
     @apply text-xl lg:text-2xl;
-  }
-
-  small {
-    @apply opacity-75 text-xl italic;
-
-    a {
-      @apply underline underline-offset-4;
-    }
   }
 }
 
@@ -183,7 +173,6 @@ section[id="more-about-me"] {
     @apply text-amber-400;
   }
 
-  /* background: #080f4f; */
   section-wrapper {
     @apply block mx-auto max-w-7xl text-xl lg:text-2xl;
 
@@ -195,19 +184,16 @@ section[id="more-about-me"] {
 
 section[id="books"] {
   @apply bg-indigo-900 overflow-hidden;
-  /* @apply border-t border-t-amber-600; */
 
   h2 {
-    @apply mb-8 px-4;
+    @apply mb-8;
   }
 
   h3 {
     @apply hidden;
   }
 
-  /* Books */
   books-wrapper {
-    /* @apply max-w-7xl; */
     @apply block relative;
 
     ul {
@@ -221,7 +207,11 @@ section[id="books"] {
       }
 
       li {
-        @apply min-w-36 lg:min-w-48 h-auto;
+        @apply min-w-36 lg:min-w-48 h-auto transition-all;
+      }
+
+      li:hover {
+        zoom: 1.01;
       }
     }
 
@@ -245,7 +235,6 @@ section[id="books"] {
     }
   }
 
-  /* Publishers */
   publishers-wrapper {
     ul {
       @apply flex gap-x-12 mt-12 mb-4;
@@ -270,11 +259,6 @@ section[id="books"] {
         @apply hidden;
       }
     }
-
-    /* Pause on hover */
-    /* ul:hover {
-      animation-play-state: paused;
-    } */
   }
 }
 
@@ -337,9 +321,9 @@ section[id="testimonials"] {
         /* @apply text-orange-400; */
       }
 
-      blockquote + figcaption a {
+      /* blockquote + figcaption a {
         @apply underline underline-offset-4;
-      }
+      } */
     }
   }
 }
@@ -367,6 +351,10 @@ section[id="services"] {
     @apply space-y-4 my-8 ml-4 lg:ml-0 list-disc;
     list-style-type: "+\0a0";
 
+    strong {
+      font-size: 110%;
+    }
+
     li::marker {
       @apply font-bold text-blue-400 text-2xl;
     }
@@ -381,8 +369,8 @@ section[id="contact"] {
   background: #0c1035;
   @apply text-2xl;
 
-  *:focus {
-    @apply outline-none;
+  *:focus-visible {
+    @apply outline-2 outline-orange-400 outline-offset-2;
   }
 
   h3 {
@@ -394,12 +382,11 @@ section[id="contact"] {
   }
 
   label {
-    @apply lg:gap-8 lg:grid lg:grid-cols-2;
-    grid-template-columns: 150px auto;
+    @apply md:flex md:gap-8;
   }
 
   span {
-    @apply flex items-center lg:m-0 mb-2 text-2xl;
+    @apply flex items-center lg:m-0 mb-2 w-72 text-2xl;
   }
 
   input,
@@ -412,7 +399,12 @@ section[id="contact"] {
   }
 
   p:last-child {
-    @apply lg:pl-[180px];
+    @apply flex;
+  }
+
+  p:last-child::before {
+    @apply hidden md:block md:w-80;
+    content: " ";
   }
 
   button[type="submit"] {
@@ -428,7 +420,7 @@ section[id="contact"] {
     }
 
     span {
-      @apply text-4xl;
+      @apply w-auto text-4xl;
     }
 
     svg {
@@ -438,13 +430,9 @@ section[id="contact"] {
 }
 
 footer {
-  @apply px-6 py-4 pt-12 pb-36 text-2xl lg:text-center;
-  font-family: "Louize Display";
+  @apply px-6 py-4 pt-12 md:pb-24 text-2xl lg:text-center;
+  font-family: var(--font-navigation);
   background: #000;
-
-  /* background: url("/catherine/labyrinth.png");
-  background-size: 3rem 3rem;
-  background-repeat: no-repeat; */
 
   a {
     @apply underline underline-offset-4;
@@ -455,15 +443,13 @@ footer {
   }
 
   strong {
-    font-family: "Eksell Display";
+    font-family: var(--font-headings);
     font-weight: 400;
   }
 
   &::before {
-    @apply block bg-current mx-auto mb-12;
+    @apply block bg-current mx-auto mb-12 w-48 h-48;
     color: red;
-    width: 12rem;
-    height: 12rem;
     content: "\0a0";
     mask-image: url(/assets/img/catherine/labyrinth.png);
     mask-position: center;

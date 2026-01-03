@@ -1,51 +1,53 @@
 const CLIENTS = [
-  "Alison McCauley",
-  "Amy Jen Su",
-  "Anthony Doerr",
-  "Aviya Kushner",
-  "Berit Brogaard, Ph.D.",
-  "Camille di Maio",
-  "Canyon Sam",
-  "Charles Belfoure",
-  "Dr. Corey Kirshner",
-  "Dianne Morris Jones",
-  "<em>Diabetic Living</em> magazine",
-  "<em>DMU Magazine</em>",
-  "Ilya Kaminsky",
-  "J. Barry Griswell <em>&</em> Bob Jennings",
-  "John Foxjohn",
-  "Kate Stockly, Ph.D.",
-  "Kathleen Frazier",
-  "Katie Swenson",
-  "Kristian Marlow, Ph.D.",
-  "Lisa King",
-  "Lori McNulty",
-  "U.S. Ambassador Mary E. Kramer",
-  "Mary Stier",
-  "Dr. Michael Miller",
   "Morra Aarons-Mele",
-  "Muriel Maignan Wilkins",
-  "Phil Karber",
-  "Rebecca Johns",
-  "Rodale Books",
+  "Charles Belfoure",
   "Sallie Bingham",
-  "Sean McGinty",
-  "Steve Gera",
-  "Dr. Sunita Osborn",
-  "Suzi Weiss-Fischmann",
-  "Terry Mutchler",
+  "Berit Brogaard, Ph.D.",
   "Trowa D. Cloud",
+  "Anthony Doerr",
+  "John Foxjohn",
+  "Kathleen Frazier",
+  "Steve Gera",
+  "Jeffrey L. Goodman",
+  "William Greenblatt",
+  "J. Barry Griswell <em>&</em> Bob Jennings",
+  "Dianne Morris Jones",
+  "Rebecca Johns",
+  "Ilya Kaminsky",
+  "Phil Karber",
+  "Lisa King",
+  "Dr. Corey Kirshner",
+  "U.S. Ambassador Mary E. Kramer",
+  "Aviya Kushner",
+  "David Lancefield",
+  "Camille di Maio",
+  "Kristian Marlow, Ph.D.",
+  "Alison McCauley",
+  "Sean McGinty",
+  "Lori McNulty",
+  "Dr. Michael Miller",
+  "Terry Mutchler",
+  "Dr. Sunita Osborn",
+  "Zorana Ivcevic Pringle, Ph.D.",
+  "Canyon Sam",
+  "Mary Stier",
+  "Kate Stockly, Ph.D.",
+  "Amy Jen Su",
+  "Katie Swenson",
+  "Suzi Weiss-Fischmann",
+  "Kandi J. Wiens, Ed.D.",
+  "Muriel Wilkins",
   "Wesley Wildman, Ph.D.",
 ];
 
 export const Clients = () => (
-  <section id="clients">
+  <section id="clients" aria-labelledby="clients-heading">
     <section-header>
-      <carousel-prev />
-      <h2>Selected Clients</h2>
-      <carousel-next />
+      <carousel-prev aria-label="Previous clients" role="button" tabIndex={0} />
+      <h2 id="clients-heading">Selected Clients</h2>
+      <carousel-next aria-label="Next clients" role="button" tabIndex={0} />
     </section-header>
-    <carousel-dots />
+    <carousel-dots aria-label="Client carousel navigation" role="tablist" />
     <section-wrapper>
       {(() => {
         const slice = Math.ceil(CLIENTS.length / 3);
@@ -56,7 +58,7 @@ export const Clients = () => (
         ];
 
         return cols.map((col, i) => (
-          <ul key={i}>
+          <ul key={i} role="list">
             {col.map((c) => (
               <li key={c}>
                 <span dangerouslySetInnerHTML={{ __html: c }} />

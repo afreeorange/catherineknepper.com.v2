@@ -43,5 +43,5 @@ import App from "../src/app";
   console.log("Copying assets");
   await fs.cp("public", "dist", { recursive: true });
 
-  console.log("All done!");
+  console.log("🎊 All done!");
 })();

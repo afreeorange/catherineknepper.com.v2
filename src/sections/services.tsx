@@ -1,6 +1,6 @@
 export const Services = () => (
-  <section id="services">
-    <h2>Services</h2>
+  <section id="services" aria-labelledby="services-heading">
+    <h2 id="services-heading">Services</h2>
     <section-wrapper>
       <p>
         I work with traditionally and independently published authors, and offer
@@ -13,34 +13,46 @@ export const Services = () => (
       <hr />
 
       <h3>Content Editing</h3>
-      <h4>Manuscript coaching + line editing + developmental editing</h4>
+      <h4>Manuscript Coaching + Line Editing + Developmental Editing</h4>
       <p>
-        My take on Content Editing is a little unconventional, but it’s evolved
-        over the years and has proven very popular with clients. This hybrid
-        approach allows me to do it all: provide applause, constructive
-        feedback, line-by-line editing, and suggestions and solutions on a
-        granular as well as a global level.
+        My approach to content editing combines big-picture developmental work
+        with detailed line-level attention. What you'll receive:
       </p>
-      <p>What you’ll receive:</p>
+
       <ul>
         <li>
-          A real-time, informal reaction to your writing. I first engage with
-          your book as a reader. I highlight what’s working well and why, pose
-          queries, and identify areas that call for revision or further
-          development. Emojis are used liberally. 😉
+          <strong>Reader response</strong>
+          <br /> I read your manuscript cover to cover first as an engaged
+          reader, not an editor, noting what's working and why. You can learn as
+          much from your strengths as your weaknesses.
         </li>
+
         <li>
-          Detailed, line-by-line editing. Here’s where I don my editing hat and
-          provide sentence-level editing that enhances your book’s flow, syntax,
-          and clarity.
+          <strong>Line-by-line editing</strong>
+          <br /> Detailed attention to flow, syntax, and clarity throughout the
+          manuscript. Hands-on, sentence-level editing.
         </li>
+
         <li>
-          A careful, considered response to your manuscript. More akin to the
-          traditional editorial letter, this global feedback provides you with
-          an assessment of the book’s overall strengths and weaknesses, along
-          with specific suggestions and solutions for revision.
+          <strong>Editorial letter</strong>
+          <br /> A careful assessment of the book's overall strengths and
+          weaknesses, with specific suggestions and a clear revision strategy.
+        </li>
+
+        <li>
+          <strong>Follow-up meeting</strong>
+          <br /> An hour-long conversation to discuss feedback and clarify your
+          revision plan.
         </li>
       </ul>
+
+      <p>
+        After you revise based on my first-pass edits, you'll send the
+        manuscript back for a final round of editing that includes copyediting.
+        The result is a polished manuscript ready for submission.
+      </p>
+
+      <p>The fee for this service is $18 per page (1 page = 250 words).</p>
 
       <hr />
 
@@ -50,28 +62,71 @@ export const Services = () => (
         traditional publication
       </h4>
       <p>
-        The good news for nonfiction authors who want to publish with a trade
-        publisher is that books are sold on proposal, rather than a completed
-        manuscript. My Book Proposal Preparation service gives you a competitive
-        proposal that’s ready to submit to literary agents, acquisitions
-        editors, and publishing houses. Components include:
+        My Book Proposal Preparation service gives you a competitive proposal
+        that's ready to submit to literary agents, acquisitions editors, and
+        publishing houses. I don't just format what you provide—I collaborate
+        with you to develop each component strategically, ensuring your proposal
+        demonstrates both the book's market potential and your ability to
+        deliver it.
       </p>
+
+      <p>Components include:</p>
+
       <ul>
-        <li>Your overview and hook</li>
-        <li>Author bio</li>
-        <li>Full marketing plan</li>
-        <li>Competitive analysis</li>
-        <li>Table of contents and chapter summaries</li>
-        <li>1-3 sample chapters</li>
+        <li>
+          <strong>Overview and hook</strong>
+          <br /> A compelling case for why this book matters now, written to
+          capture attention in the first paragraph
+        </li>
+
+        <li>
+          <strong>Author bio</strong>
+          <br /> Positioning that establishes your credibility and unique
+          authority on the subject
+        </li>
+
+        <li>
+          <strong>Marketing plan</strong>
+          <br /> A comprehensive strategy covering media outreach, digital
+          marketing, social media, speaking opportunities, partnerships, and
+          audience-building tactics. This isn't a generic checklist—it's a
+          tailored roadmap that demonstrates you understand your readers, where
+          to find them, and how to build momentum before and after publication.{" "}
+          <strong>
+            This section alone often makes the difference between a pass and an
+            offer.
+          </strong>
+        </li>
+
+        <li>
+          <strong>Competitive analysis</strong>
+          <br /> Clear differentiation from comparable titles that demonstrates
+          your book's distinct value
+        </li>
+
+        <li>
+          <strong>Annotated table of contents</strong>
+          <br /> Detailed chapter summaries that show exactly what the book will
+          cover and how it all flows together
+        </li>
+
+        <li>
+          <strong>Sample chapter</strong>
+          <br /> Polished writing that shows agents and editors exactly what
+          they're buying and what you are capable of
+        </li>
       </ul>
+
       <p>
-        <mark>
-          My rates start at $9,000.{" "}
-          <em>
-            To date, every client whose proposal has sold has recouped the cost
-            of editing with their advance.
-          </em>{" "}
-        </mark>
+        We'll work together through multiple drafts, refining the proposal until
+        every element is as strong as it can be. The goal isn't just to check
+        boxes—it's to build a document that makes agents want to read your full
+        manuscript and editors want to acquire your book.
+      </p>
+
+      <p>
+        My rates start at $12,000. To date, every client's advance has covered
+        the cost of services.
       </p>
 
       <hr />
@@ -80,37 +135,32 @@ export const Services = () => (
         Manuscript Collaboration <em>&amp;</em> Ghostwriting (nonfiction only)
       </h3>
       <p>
-        If you have a great idea for a book but don’t have the time, writing
-        experience, or inclination to write it, let’s work together to create a
-        bestseller. You can write as much or as little as you like: I’ve worked
-        with authors who provided 30 pages of content per chapter to authors who
-        left all the writing and research to me (and everything in between).
+        If you have a strong book concept but need a collaborator to help bring
+        it to the page, I work with authors to develop manuscripts that are both
+        well-crafted and market-ready. My role is flexible: some clients provide
+        detailed outlines and substantial content for each chapter, while others
+        prefer I handle the research and writing. We'll find the approach that
+        works best for your project.
       </p>
       <p>
-        I’ve written books in as little as four months, but generally, you
-        should set aside around six months for the production of a manuscript of
-        60,000 – 80,000 words, and slightly longer if you’d like a book proposal
-        as well. Book Proposal Preparation + Manuscript Collaboration packages
-        are available.
+        Timeline depends on scope, but a typical manuscript of 60,000–80,000
+        words takes approximately six months. If you need both a book proposal
+        and a full manuscript, we can structure the work in phases or as a
+        combined package.
       </p>
       <p>
-        My rates are on the higher end of the professional ghostwriting scale,
-        but can vary widely depending on the amount of work involved, the
-        delivery deadline, and other negotiable terms such as profit-sharing and
-        byline. (I do not require a byline and am happy to sign an NDA.){" "}
-        <mark>
-          Please contact me for details and I’ll provide you with a proposal
-          outlining terms of service, deliverables, and fees.
-        </mark>
+        My rates reflect the level of collaboration required, the timeline, and
+        other factors such as profit-sharing arrangements. I don't require a
+        byline and am happy to sign an NDA. Contact me to discuss your project,
+        and I'll provide a proposal outlining deliverables, terms, and fees.
       </p>
 
       <hr />
 
       <h3>Consultation Hours</h3>
       <p>
-        For writing or editing short works (articles, op-eds, chapters, query
-        letters, etc.), or to consult me on matters related to publishing,{" "}
-        <mark>I offer an hourly rate of $150.</mark>
+        For shorter projects — articles, op-eds, individual chapters, query
+        letters, or publishing consultations — I work at an hourly rate of $150.
       </p>
     </section-wrapper>
   </section>
