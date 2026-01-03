@@ -50,11 +50,6 @@ export const Hello = () => (
         publication—while preserving the voice and vision that makes your work
         distinctly yours.{" "}
       </p>
-      <p>
-        <small>
-          Photo by <a href="https://kathryngamble.com/">Kathryn Gamble</a>
-        </small>
-      </p>
     </section-wrapper>
   </section>
 );

@@ -65,7 +65,8 @@ export const App = () => {
 
       <footer>
         &copy; {new Date().getFullYear()},{" "}
-        <strong>Catherine Knepper Writing Services, LLC</strong>. <br />I
+        <strong>Catherine Knepper Writing Services, LLC</strong>. Photo by my
+        friend <a href="https://kathryngamble.com/">Kathryn Gamble</a>. <br />I
         respect your privacy and use{" "}
         <a
           href="https://plausible.io"
