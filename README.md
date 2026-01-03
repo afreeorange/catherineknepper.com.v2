@@ -13,9 +13,9 @@
 - [x] Discretionary Ligatures! E.g. "Muriel"
 - [x] Back to top ^^^
 - [x] Responsive :/
-- [ ] BookShop.org links
+- [x] BookShop.org links
 - [-] Carousel for Logos
-- [ ] Final Copy review
+- [x] Final Copy review
 - [ ] Colors
 - [x] Mark color
 - [x] Arrows opacity

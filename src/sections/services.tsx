@@ -16,14 +16,14 @@ export const Services = () => (
       <h4>Manuscript Coaching + Line Editing + Developmental Editing</h4>
       <p>
         My approach to content editing combines big-picture developmental work
-        with detailed line-level attention. What you'll receive:
+        with detailed line-level attention. What you&#8217;ll receive:
       </p>
 
       <ul>
         <li>
           <strong>Reader response</strong>
           <br /> I read your manuscript cover to cover first as an engaged
-          reader, not an editor, noting what's working and why. You can learn as
+          reader, not an editor, noting what&#8217;s working and why. You can learn as
           much from your strengths as your weaknesses.
         </li>
 
@@ -35,7 +35,7 @@ export const Services = () => (
 
         <li>
           <strong>Editorial letter</strong>
-          <br /> A careful assessment of the book's overall strengths and
+          <br /> A careful assessment of the book&#8217;s overall strengths and
           weaknesses, with specific suggestions and a clear revision strategy.
         </li>
 
@@ -47,7 +47,7 @@ export const Services = () => (
       </ul>
 
       <p>
-        After you revise based on my first-pass edits, you'll send the
+        After you revise based on my first-pass edits, you&#8217;ll send the
         manuscript back for a final round of editing that includes copyediting.
         The result is a polished manuscript ready for submission.
       </p>
@@ -63,10 +63,10 @@ export const Services = () => (
       </h4>
       <p>
         My Book Proposal Preparation service gives you a competitive proposal
-        that's ready to submit to literary agents, acquisitions editors, and
-        publishing houses. I don't just format what you provide—I collaborate
+        that&#8217;s ready to submit to literary agents, acquisitions editors, and
+        publishing houses. I don&#8217;t just format what you provide&#8202;—&#8202;I collaborate
         with you to develop each component strategically, ensuring your proposal
-        demonstrates both the book's market potential and your ability to
+        demonstrates both the book&#8217;s market potential and your ability to
         deliver it.
       </p>
 
@@ -89,7 +89,7 @@ export const Services = () => (
           <strong>Marketing plan</strong>
           <br /> A comprehensive strategy covering media outreach, digital
           marketing, social media, speaking opportunities, partnerships, and
-          audience-building tactics. This isn't a generic checklist—it's a
+          audience-building tactics. This isn&#8217;t a generic checklist&#8202;—&#8202;it&#8217;s a
           tailored roadmap that demonstrates you understand your readers, where
           to find them, and how to build momentum before and after publication.{" "}
           <strong>
@@ -101,7 +101,7 @@ export const Services = () => (
         <li>
           <strong>Competitive analysis</strong>
           <br /> Clear differentiation from comparable titles that demonstrates
-          your book's distinct value
+          your book&#8217;s distinct value
         </li>
 
         <li>
@@ -113,19 +113,19 @@ export const Services = () => (
         <li>
           <strong>Sample chapter</strong>
           <br /> Polished writing that shows agents and editors exactly what
-          they're buying and what you are capable of
+          they&#8217;re buying and what you are capable of
         </li>
       </ul>
 
       <p>
-        We'll work together through multiple drafts, refining the proposal until
-        every element is as strong as it can be. The goal isn't just to check
-        boxes—it's to build a document that makes agents want to read your full
+        We&#8217;ll work together through multiple drafts, refining the proposal until
+        every element is as strong as it can be. The goal isn&#8217;t just to check
+        boxes&#8202;—&#8202;it&#8217;s to build a document that makes agents want to read your full
         manuscript and editors want to acquire your book.
       </p>
 
       <p>
-        My rates start at $12,000. To date, every client's advance has covered
+        My rates start at $12,000. To date, every client&#8217;s advance has covered
         the cost of services.
       </p>
 
@@ -139,28 +139,28 @@ export const Services = () => (
         it to the page, I work with authors to develop manuscripts that are both
         well-crafted and market-ready. My role is flexible: some clients provide
         detailed outlines and substantial content for each chapter, while others
-        prefer I handle the research and writing. We'll find the approach that
+        prefer I handle the research and writing. We&#8217;ll find the approach that
         works best for your project.
       </p>
       <p>
-        Timeline depends on scope, but a typical manuscript of 60,000–80,000
+        Timeline depends on scope, but a typical manuscript of 60,000&#8211;80,000
         words takes approximately six months. If you need both a book proposal
         and a full manuscript, we can structure the work in phases or as a
         combined package.
       </p>
       <p>
         My rates reflect the level of collaboration required, the timeline, and
-        other factors such as profit-sharing arrangements. I don't require a
+        other factors such as profit-sharing arrangements. I don&#8217;t require a
         byline and am happy to sign an NDA. Contact me to discuss your project,
-        and I'll provide a proposal outlining deliverables, terms, and fees.
+        and I&#8217;ll provide a proposal outlining deliverables, terms, and fees.
       </p>
 
       <hr />
 
       <h3>Consultation Hours</h3>
       <p>
-        For shorter projects — articles, op-eds, individual chapters, query
-        letters, or publishing consultations — I work at an hourly rate of $150.
+        For shorter projects&#8202;—&#8202;articles, op-eds, individual chapters, query
+        letters, or publishing consultations&#8202;—&#8202;I work at an hourly rate of $150.
       </p>
     </section-wrapper>
   </section>

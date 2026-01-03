@@ -6,16 +6,16 @@ export const Hello = () => (
         matter.
       </h2>
       <p>
-        For over twenty years, I've worked with people who have something vital
+        For over twenty years, I&#8217;ve worked with people who have something vital
         to say and need a skilled partner to help them say it well. Whether
-        you're distilling decades of professional insight, uncovering the
+        you&#8217;re distilling decades of professional insight, uncovering the
         emotional truth of a story, or translating specialized knowledge for
         broader audiences, great books require both craft and clarity. My job is
         to help you achieve both without sacrificing either.
       </p>
 
       <p>
-        I've collaborated on fifteen books, including <em>USA Today</em> and{" "}
+        I&#8217;ve collaborated on fifteen books, including <em>USA Today</em> and{" "}
         <em>Wall Street Journal</em> <strong>bestsellers</strong>,{" "}
         <strong>Thinkers50 selections</strong>,{" "}
         <strong>Next Big Idea Club picks</strong>, <em>Financial Times</em>{" "}
@@ -36,7 +36,7 @@ export const Hello = () => (
         <strong>Independent Publisher Book Award recipients</strong>, and
         writers whose work has been named among the{" "}
         <strong>
-          year's best by <em>Time</em>, <em>Entertainment Weekly</em>, and NPR's{" "}
+          year&#8217;s best by <em>Time</em>, <em>Entertainment Weekly</em>, and NPR&#8217;s{" "}
           <em>Fresh Air</em>
         </strong>
         . Their books have earned{" "}
@@ -55,12 +55,12 @@ export const Hello = () => (
         idea, articulate market relevance, and demonstrate that the book can
         deliver.{" "}
         <strong>
-          Every proposal I've written has sold to a major publisher.
+          Every proposal I&#8217;ve written has sold to a major publisher.
         </strong>
       </p>
 
       <p>
-        Whether you're writing your first book or refining your tenth, I provide
+        Whether you&#8217;re writing your first book or refining your tenth, I provide
         the editorial partnership required to move from idea to
         publication—while preserving the voice and vision that makes your work
         distinctly yours.

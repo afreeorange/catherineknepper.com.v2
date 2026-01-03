@@ -10,7 +10,7 @@ const CLIENTS = [
   "Steve Gera",
   "Jeffrey L. Goodman",
   "William Greenblatt",
-  "J. Barry Griswell <em>&</em> Bob Jennings",
+  "J. Barry Griswell <em>&amp;</em> Bob Jennings",
   "Dianne Morris Jones",
   "Rebecca Johns",
   "Ilya Kaminsky",

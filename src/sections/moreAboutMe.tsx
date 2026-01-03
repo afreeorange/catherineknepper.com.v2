@@ -3,24 +3,24 @@ export const MoreAboutMe = () => (
     <h2 id="more-about-me-heading">More About Me</h2>
     <section-wrapper>
       <p>
-        I'm a writer, editor, and publishing consultant with over twenty years
+        I&#8217;m a writer, editor, and publishing consultant with over twenty years
         of experience helping authors bring their best work to the page.
       </p>
 
       <p>
-        I began editing in 2003 while completing my MFA at the Iowa Writers'
+        I began editing in 2003 while completing my MFA at the Iowa Writers&#8217;
         Workshop. The Workshop taught me a great deal about the creative side of
         writing, but it was working as an editor and collaborative writer that
-        taught me the business of publishing—how to position a book, how agents
+        taught me the business of publishing&#8202;—&#8202;how to position a book, how agents
         and editors think, how to navigate the distance between a brilliant idea
         and a manuscript that actually sells.
       </p>
 
       <p>
-        Since launching my own business in 2009, I've worked with hundreds of
+        Since launching my own business in 2009, I&#8217;ve worked with hundreds of
         authors across dozens of genres, collaborated on fifteen books,
         developed book proposals for major publishers, and cultivated working
-        relationships with many of the top literary agents in the business. I've
+        relationships with many of the top literary agents in the business. I&#8217;ve
         written speeches, op-eds, articles, and book marketing materials. My own
         fiction has appeared in <em>West Branch</em>,{" "}
         <em>The Florida Review</em>, <em>Memorious</em>,{" "}
@@ -29,11 +29,11 @@ export const MoreAboutMe = () => (
       </p>
 
       <p>
-        My degrees span English literature and philosophy & religion (B.A.),
-        theology (M.Div.), and fiction (MFA)—a multidisciplinary foundation that
+        My degrees span English literature and philosophy &amp; religion (B.A.),
+        theology (M.Div.), and fiction (MFA)&#8202;—&#8202;a multidisciplinary foundation that
         informs how I think about structure, argument, and narrative across
         genres. As a writer with experience on both sides of the publishing
-        desk, I'm in a unique position to help you make your book both
+        desk, I&#8217;m in a unique position to help you make your book both
         beautifully crafted and commercially successful.
       </p>
 

@@ -51,11 +51,10 @@ export const Testimonials = () => (
 
       <figure>
         <blockquote>
-          There are editors, and there are editors. And then – I kid you not –
-          there are <em>editors</em>. I've worked with a lot of editors. All
-          kinds. Heck, I'm an editor. Catherine Knepper is damn near peerless.
-          Fiction or nonfiction; it matters not. She's the kind of editor that
-          editors want to work on their prose. It won't be easy to get on her
+          There are editors, and there are editors. And then&#8202;—&#8202;I kid you not&#8202;—&#8202;there are <em>editors</em>. I&#8217;ve worked with a lot of editors. All
+          kinds. Heck, I&#8217;m an editor. Catherine Knepper is damn near peerless.
+          Fiction or nonfiction; it matters not. She&#8217;s the kind of editor that
+          editors want to work on their prose. It won&#8217;t be easy to get on her
           schedule but if you get the chance, grab it with both hands and hold
           on for a wild ride.
         </blockquote>
@@ -97,7 +96,7 @@ export const Testimonials = () => (
           herself in my personal journey, and her ability to take my life and
           put it down on paper in a way that is completely authentic and genuine
           is so impressive. She captured my voice and translated it to a story
-          that reads so beautifully - exactly what I wanted to say, but better.
+          that reads so beautifully&#8202;—&#8202;exactly what I wanted to say, but better.
         </blockquote>
         <figcaption>
           <a href="http://1stladyofcolors.com/" title="Suzi Weiss-Fischmann">
@@ -110,10 +109,10 @@ export const Testimonials = () => (
           and author of{" "}
           <a
             href="https://www.amazon.com/Im-Not-Really-Waitress-Industry/dp/1580058191/ref=sr_1_1?ie=UTF8&qid=1548853681&sr=8-1&keywords=i%27m+not+really+a+waitress+book"
-            title="I'm Not Really a Waitress: How One Woman Took Over the Beauty Industry One Color at a Time"
+            title="I&#8217;m Not Really a Waitress: How One Woman Took Over the Beauty Industry One Color at a Time"
           >
             <em>
-              I'm Not Really a Waitress: How One Woman Took Over the Beauty
+              I&#8217;m Not Really a Waitress: How One Woman Took Over the Beauty
               Industry One Color at a Time
             </em>
           </a>
@@ -126,7 +125,7 @@ export const Testimonials = () => (
           knew I needed someone who could deliver a high-quality, no nonsense,
           practical manuscript for a business audience and be able to do that in
           a way which also captured my natural style, authenticity, and voice as
-          an executive coach. From the outset, I noticed Catherine’s rigor in
+          an executive coach. From the outset, I noticed Catherine&#8217;s rigor in
           how she approached really understanding the publisher I was working
           with and the reader I was writing for. Her level of commitment only
           continued as we spent months working together to transform outlines,
@@ -146,11 +145,11 @@ export const Testimonials = () => (
           and author of{" "}
           <a
             href="https://store.hbr.org/product/the-leader-you-want-to-be-five-essential-principles-for-bringing-out-your-best-self-every-day/10197"
-            title="The Leader You Want to Be: Five Essential Principles for Bringing Out Your Best Self - Every Day"
+            title="The Leader You Want to Be: Five Essential Principles for Bringing Out Your Best Self&#8202;—&#8202;Every Day"
           >
             <em>
               The Leader You Want to Be: Five Essential Principles for Bringing
-              Out Your Best Self - Every Day
+              Out Your Best Self&#8202;—&#8202;Every Day
             </em>
           </a>
         </figcaption>
@@ -159,20 +158,20 @@ export const Testimonials = () => (
       <figure>
         <blockquote>
           I have no doubt my book would not have been the success it is without
-          Catherine's editorial help. This was a challenging piece and I had
+          Catherine&#8217;s editorial help. This was a challenging piece and I had
           fast deadlines, but she immediately understood my objectives and
           voice, and was able to quickly identify smart solutions on exactly how
           to move it forward. She breathed new vision into my manuscript in just
           a few short weeks. Catherine puts great dedication and care into her
-          work. She spends the time to do what's best for her clients, and
+          work. She spends the time to do what&#8217;s best for her clients, and
           handled my writing with an incredible amount of thoughtfulness. There
           is no doubt Catherine is in your court. She gave me the direct
           feedback I needed, and set me on a smart path forward. Working with
-          Catherine on my manuscript was one of the most enjoyable projects I've
+          Catherine on my manuscript was one of the most enjoyable projects I&#8217;ve
           experienced over a decades-long career.
         </blockquote>
         <figcaption>
-          <a href="https://www.alisonmccauley.io/bio" title="Alison McCauley">
+          <a href="https://www.alisonmccauley.io" title="Alison McCauley">
             <strong>Alison McCauley</strong>
           </a>
           , CEO and Founder of{" "}
@@ -197,12 +196,12 @@ export const Testimonials = () => (
           Catherine Knepper is a dream of an editor. She excels at both
           diagnosing the problem and figuring out a way forward. This
           combination is extremely rare: it takes special skill to understand
-          not only what a writing project is, but what it might be. What's
+          not only what a writing project is, but what it might be. What&#8217;s
           especially wonderful about Catherine is that she is able to explain
           both what is wrong and what is right in a clear, supportive manner.
-          I'd recommend her to any writer who wants a super-smart, talented,
+          I&#8217;d recommend her to any writer who wants a super-smart, talented,
           warm and professional editor who is both thorough and creative. She is
-          the real deal, and seeing her work left me with just one word - wow.
+          the real deal, and seeing her work left me with just one word&#8202;—&#8202;wow.
         </blockquote>
         <figcaption>
           <a href="http://aviyakushner.com/about/" title="Aviya Kushner">
@@ -226,10 +225,9 @@ export const Testimonials = () => (
               Reverse Heart Disease
             </a>
           </em>
-          , in an insanely short period (4 months!). Catherine interviewed many
+          , in an insanely short period (4&nbsp;months!). Catherine interviewed many
           of my patients, all of whom loved speaking with her and sharing their
-          stories, and converted dull medical material into an interesting '
-          <a href="https://www.facebook.com/healyourheartbook">page turner</a>.'
+          stories, and converted dull medical material into an interesting &#8220;<a href="https://www.facebook.com/healyourheartbook">page turner</a>.&#8221;
           Perhaps my editor summed it up best by stating that this was the most
           complete manuscript she had ever received.
         </blockquote>
@@ -296,7 +294,7 @@ export const Testimonials = () => (
       <figure>
         <blockquote>
           Catherine is gifted not just in crafting great prose and helping
-          others craft great prose. She's gifted in gently instructing and
+          others craft great prose. She&#8217;s gifted in gently instructing and
           guiding you along the way so that your future work will be that much
           better.
         </blockquote>
@@ -308,7 +306,7 @@ export const Testimonials = () => (
           and author of{" "}
           <a
             href="https://www.amazon.com/Nourished-Memoir-Faith-Enduring-Recipes/dp/045149881X"
-            title="Nourished: A Memoir of Faith, Food, & Enduring Love"
+            title="Nourished: A Memoir of Faith, Food, &amp; Enduring Love"
           >
             <em>Nourished: A Memoir of Faith, Food, &amp; Enduring Love</em>
           </a>
@@ -330,7 +328,7 @@ export const Testimonials = () => (
             </a>
           </em>
           , but few as discerning and imaginative as Catherine Knepper. She has
-          played more than a few roles in the manuscript's development, from
+          played more than a few roles in the manuscript&#8217;s development, from
           copy editor and sounding board to fact checker and midwife. Her faith
           in the manuscript was untiring.
         </blockquote>
@@ -395,7 +393,7 @@ export const Testimonials = () => (
           and{" "}
           <a
             href="https://www.amazon.com/Unlikely-Ambassador-Her-Diplomatic-Daughter/dp/1512142131"
-            title="An Unlikely Ambassador and Her Diplomatic Daughter: Stories & Recipes for the Life You Want"
+            title="An Unlikely Ambassador and Her Diplomatic Daughter: Stories &amp; Recipes for the Life You Want"
           >
             <em>
               An Unlikely Ambassador and Her Diplomatic Daughter: Stories &amp;
@@ -450,10 +448,10 @@ export const Testimonials = () => (
           and authors of{" "}
           <a
             href="https://www.amazon.com/Be-Wolf-Entrepreneurs-Becoming-Leader/dp/1450590616"
-            title="Be a Wolf: The Entrepreneur's Guide to Becoming a Leader of the Pack"
+            title="Be a Wolf: The Entrepreneur&#8217;s Guide to Becoming a Leader of the Pack"
           >
             <em>
-              Be a Wolf: The Entrepreneur's Guide to Becoming a Leader of the
+              Be a Wolf: The Entrepreneur&#8217;s Guide to Becoming a Leader of the
               Pack
             </em>
           </a>

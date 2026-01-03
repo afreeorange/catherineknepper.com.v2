@@ -2,7 +2,7 @@ export const Contact = () => (
   <section id="contact" aria-labelledby="contact-heading">
     <h2 id="contact-heading">Contact</h2>
     <h3>
-      Ready to discuss your project? Please reach out and I'll get in touch with
+      Ready to discuss your project? Please reach out and I&#8217;ll get in touch with
       you soon!
     </h3>
     <section-wrapper>

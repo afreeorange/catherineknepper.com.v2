@@ -60,18 +60,6 @@ export const Books = () => {
           ))}
         </ul>
       </publishers-wrapper>
-
-      {/* <ul>
-          {PUBLISHERS.map((_) => (
-            <li>
-              <img src={_.path} alt={`${_.name}`} />
-              <span>
-                <br />
-                {_.name}
-              </span>
-            </li>
-          ))}
-        </ul> */}
     </section>
   );
 };

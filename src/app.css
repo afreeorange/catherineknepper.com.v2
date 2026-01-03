@@ -177,9 +177,9 @@ section[id="more-about-me"] {
   section-wrapper {
     @apply block mx-auto max-w-7xl text-xl lg:text-2xl;
 
-    p:nth-of-type(1) {
+    /* p:nth-of-type(1) {
       @apply text-2xl lg:text-3xl;
-    }
+    } */
   }
 }
 
@@ -350,10 +350,10 @@ section[id="services"] {
 
   ul {
     @apply space-y-4 my-8 ml-4 lg:ml-0 list-disc;
-    list-style-type: "+\0a0";
 
     strong {
-      font-size: 110%;
+      /* font-size: 110%; */
+      @apply italic;
     }
 
     li::marker {
@@ -375,7 +375,7 @@ section[id="contact"] {
   }
 
   h3 {
-    @apply max-w-4xl;
+    @apply max-w-7xl text-2xl md:text-3xl;
   }
 
   section-wrapper {
